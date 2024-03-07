@@ -542,14 +542,21 @@ color: var(--red);
 
 /* Sidebar Tabs */
 
-.s-lg-tabs-side #s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a {
-font-family: var(--font);
-font-size:13px !important;
-padding: 7px 10px;
+#s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a {
+  background-color: var(--light-gray);
+  border-color: var(--light-gray);
+  color: #000;
+  font-family: var(--font);
+  font-size:13px !important;
+  padding: 7px 10px;
 }
-.s-lg-tabs-side #s-lg-guide-tabs .s-lib-jqtabs .tab-content {
-border: 0;
-padding: 0;
+#s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a:hover {
+  background-color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+#s-lg-guide-tabs .s-lib-jqtabs .tab-content {
+  border: 0;
+  padding: 0;
 }
 
 /* ------- Accordions ------- */
