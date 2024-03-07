@@ -541,7 +541,9 @@ color: var(--red);
 }
 
 /* Sidebar Tabs */
-
+#s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs {
+  display: flex;
+}
 #s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a {
   background-color: var(--light-gray);
   border: 2px solid var(--light-gray) !important;
@@ -549,7 +551,7 @@ color: var(--red);
   color: #000 !important;
   font-family: var(--font);
   font-size:13px !important;
-  font-weight: 500;
+  font-weight: 500 !important;
   padding: 7px 10px;
   margin-right: 4px;
 }
@@ -557,6 +559,11 @@ color: var(--red);
   background-color: #bbbbbb;
   border-color: #bbbbbb !important;
   border-radius: 5px !important;
+}
+#s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li.active a {
+  background-color: var(--dark-gray) !important;
+  border-color: var(--dark-gray) !important;
+  color: #fff !important;
 }
 #s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a:focus {
   border-color: #000;
