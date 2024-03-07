@@ -544,8 +544,9 @@ color: var(--red);
 
 #s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a {
   background-color: var(--light-gray);
-  border-color: var(--light-gray);
-  color: #000;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+  color: #000 !important;
   font-family: var(--font);
   font-size:13px !important;
   padding: 7px 10px;
@@ -553,6 +554,12 @@ color: var(--red);
 #s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a:hover {
   background-color: #bbbbbb;
   border-color: #bbbbbb;
+}
+#s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a:focus {
+  border-color: #000;
+}
+#s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a::after {
+  content: "";
 }
 #s-lg-guide-tabs .s-lib-jqtabs .tab-content {
   border: 0;
