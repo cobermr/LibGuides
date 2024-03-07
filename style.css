@@ -551,7 +551,7 @@ color: var(--red);
   color: #000 !important;
   font-family: var(--font);
   font-size:13px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   padding: 7px 10px;
   margin-right: 4px;
 }
@@ -566,7 +566,7 @@ color: var(--red);
   color: #fff !important;
 }
 #s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a:focus {
-  border-color: #000;
+  border-color: #000 !important;
 }
 #s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a::after {
   content: "";
