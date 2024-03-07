@@ -567,6 +567,7 @@ color: var(--red);
 }
 #s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a:focus {
   border-color: #000 !important;
+  outline: none;
 }
 #s-lg-guide-tabs .s-lib-jqtabs ul.nav-tabs li a::after {
   content: "";
