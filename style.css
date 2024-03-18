@@ -39,7 +39,6 @@ transition: none;
 }
 button:focus, a.cta:focus {
 border: 2px solid #000 !important;
-outline: 1px solid #000 !important;
 }
 h1, h2, h3, h4, h5, h6 {
 color: var(--dark-gray);
@@ -479,7 +478,7 @@ margin-bottom: 10px;
 
 
 .s-lib-jqtabs ul.nav-tabs > li > a:focus {
-outline: 1px dotted #000 !important;
+border-bottom: 1px dotted #000 !important;
 }
 .s-lib-jqtabs ul.nav-tabs > li > a:hover, .s-lib-jqtabs .tab-pane:focus {
 outline: none;
