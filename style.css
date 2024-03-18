@@ -478,7 +478,10 @@ margin-bottom: 10px;
 
 
 .s-lib-jqtabs ul.nav-tabs > li > a:focus {
-border-bottom: 1px dotted #000 !important;
+  border-bottom: 1px dotted #000 !important;
+  border-left: 1px dotted #000 !important;
+  border-right: 1px dotted #000 !important;
+  outline: none;
 }
 .s-lib-jqtabs ul.nav-tabs > li > a:hover, .s-lib-jqtabs .tab-pane:focus {
 outline: none;
