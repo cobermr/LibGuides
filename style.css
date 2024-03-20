@@ -669,18 +669,19 @@ outline: 2px solid #000;
 transition: none;
 }
 .accordion-top {
-float: right;
-margin-top: 10px;
-color: var(--dark-gray);
-font-size: 14px;
+  float: right;
+  margin-top: 10px;
+  color: var(--dark-gray) !important;
+  font-size: 14px;
+  text-decoration: none;
 }
 .accordion-top:hover {
-text-decoration: none;
+  text-decoration: none;
 }
 .accordion-top::after {
-content: "\f176";
-font-family: "FontAwesome";
-padding: 0 10px 0 5px;
+  content: "\f176";
+  font-family: "FontAwesome";
+  padding: 0 10px 0 5px;
 }
 
 /* ------- OneSearch ------- */
