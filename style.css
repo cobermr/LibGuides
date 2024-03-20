@@ -599,6 +599,7 @@ margin-bottom: 50px;
 }
 .accordion a.panel-title:hover, .accordion a.panel-title:hover h2, .accordion a.panel-title:hover h3, .accordion a.panel-title:hover h4, .accordion a.panel-title:hover h5 {
   color: var(--red) !important;
+  transition: all .5s ease;
 }
 .accordion .panel-title[aria-expanded="true"] {
 border-radius: 5px 5px 0 0;
