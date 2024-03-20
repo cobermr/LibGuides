@@ -677,7 +677,7 @@ transition: none;
   margin-top: 10px;
   color: var(--dark-gray) !important;
   font-size: 14px;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .accordion-top:hover {
   text-decoration: none;
