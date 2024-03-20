@@ -595,10 +595,10 @@ margin-bottom: 50px;
   position: relative;
   padding: 20px 40px 20px 20px;
   line-height: normal;
-  color: var(--dark-gray);
+  color: var(--dark-gray) !important;
 }
 .accordion a.panel-title:hover {
-  color: var(--red);
+  color: var(--red) !important;
 }
 .accordion .panel-title[aria-expanded="true"] {
 border-radius: 5px 5px 0 0;
