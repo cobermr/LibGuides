@@ -31,7 +31,7 @@ line-height: 1.6em;
   font-weight: 600;
   text-decoration: underline;
 }
-#s-lg-side-nav-content a:hover, #s-lg-side-nav-content a:active, #s-lg-side-nav-content a:focus {
+#s-lg-side-nav-content a:not(.cta):hover, #s-lg-side-nav-content a:not(.cta):active, #s-lg-side-nav-content a:not(.cta):focus {
 color: #000;
 }
 #s-lg-side-nav-content a:focus {
