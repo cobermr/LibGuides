@@ -585,16 +585,20 @@ color: var(--red);
 .accordion-top {
 margin-bottom: 50px;
 }
-.accordion .panel-title {
-background-color: #fff;
-padding: 0;
-border-radius: 5px;
-font-size: 18px;
-font-weight: 600;
-display: block;
-position: relative;
-padding: 20px 40px 20px 20px;
-line-height: normal;
+.accordion a.panel-title {
+  background-color: #fff;
+  padding: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  position: relative;
+  padding: 20px 40px 20px 20px;
+  line-height: normal;
+  color: var(--dark-gray);
+}
+.accordion a.panel-title:hover {
+  color: var(--red);
 }
 .accordion .panel-title[aria-expanded="true"] {
 border-radius: 5px 5px 0 0;
