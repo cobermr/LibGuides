@@ -597,7 +597,7 @@ margin-bottom: 50px;
   line-height: normal;
   color: var(--dark-gray) !important;
 }
-.accordion a.panel-title:hover {
+.accordion a.panel-title:hover, .accordion a.panel-title:hover h2, .accordion a.panel-title:hover h3, .accordion a.panel-title:hover h4, .accordion a.panel-title:hover h5 {
   color: var(--red) !important;
 }
 .accordion .panel-title[aria-expanded="true"] {
