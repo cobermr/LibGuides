@@ -26,15 +26,15 @@ background-color: var(--white);
 p {
 line-height: 1.6em;
 }
-#s-lg-side-nav-content a {
+#s-lg-side-nav-content a:not(.cta) {
   color: var(--red);
   font-weight: 600;
   text-decoration: underline;
 }
-a:hover, a:active, a:focus {
+#s-lg-side-nav-content a:hover, #s-lg-side-nav-content a:active, #s-lg-side-nav-content a:focus {
 color: #000;
 }
-a:focus {
+#s-lg-side-nav-content a:focus {
 outline: 2px solid var(--dark-gray);
 transition: none;
 }
