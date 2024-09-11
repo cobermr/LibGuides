@@ -1,6 +1,7 @@
 /* ------- Variables ------- */
 
 :root {
+  /* Colors */
   --darkest-gray: #111111;
   --darker-gray: #333333;
   --dark-gray: #555555;
@@ -9,16 +10,20 @@
   --darkest-red: #6f0700;
   --dark-red: #880f07;
   --red: #b1160b;
-/*  --red: #bf2117; OLD */
   --light-red: #ffebeb;
   --white: #ffffff;
+  /* OLD --red: #bf2117; */
+
+  /* Fonts */
   --font: Poppins,Helvetica,"sans-serif";
+  /*--fs-xs: ;*/
 }
 .red {
 color: var(--red);
 }
 html {
-scroll-behavior: smooth;
+  font-size: initial !important;
+  scroll-behavior: smooth;
 }
 body {
 background-color: var(--white);
@@ -52,7 +57,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 15px 40px rgba(0, 0, 0, .06);
 outline:0px;
 }
 #s-lg-guide-main {
-font-size: 16px;
+font-size: 1rem;
 font-family: var(--font);
 }
 .s-lg-guide-body {
