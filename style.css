@@ -821,6 +821,14 @@ border: 1px solid #dddddd;
 
 @media (max-width: 992px) {
 
+  /* ------- Tiles ------- */
+  .tiles-group {
+    display: inline;
+  }
+  .tiles-group .tile {
+    padding: 0px;
+    margin: 5px;
+  }
 
 }
 
