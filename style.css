@@ -486,11 +486,15 @@ margin-bottom: 10px;
 
 /* ------- Tiles ------- */
 
+.tiles-group {
+  display: flex;
+}
+}
 .tiles-group .tile {
   border: 1px solid #cccccc;
   border-radius: 3px;
   display: block;
-  margin: 5px;
+  flex: 1;
 }
 
 .tiles-group .tile > a {
