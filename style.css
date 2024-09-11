@@ -498,10 +498,11 @@ margin-bottom: 10px;
   display: block;
   border: 1px solid #cccccc;
   border-radius: 3px;
+  height: 100%;
 }
 
 .tiles-group .tile h2, .tiles-group .tile h3 {
-  font-size: var(--fs-md);
+  font-size: var(--fs-sm);
   margin: 0px;
   color: var(--red);
   font-weight: 600;
@@ -509,6 +510,7 @@ margin-bottom: 10px;
 
 .tiles-group .tile p {
   color: var(--darker-gray);
+  font-size: var(--fs-xs);
   font-weight: normal;
   margin: 0px;
   padding: 0px;
