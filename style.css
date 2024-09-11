@@ -490,14 +490,14 @@ margin-bottom: 10px;
   display: flex;
 }
 .tiles-group .tile {
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-  display: block;
   flex: 1;
 }
 
 .tiles-group .tile > a {
   padding: 20px;
+  display: block;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
 }
 
 .tiles-group .tile h2, .tiles-group .tile h3 {
