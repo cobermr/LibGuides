@@ -489,7 +489,6 @@ margin-bottom: 10px;
 .tiles-group {
   display: flex;
 }
-}
 .tiles-group .tile {
   border: 1px solid #cccccc;
   border-radius: 3px;
