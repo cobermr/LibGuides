@@ -475,6 +475,32 @@ border-bottom: 1px solid var(--light-gray);
 margin-bottom: 10px;
 }
 
+/* ------- Tiles ------- */
+
+.tiles-group .tile {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  display: block;
+  list-style: none;
+}
+
+.tiles-group .tile > a {
+  padding: 20px;
+}
+
+.tiles-group .tile h2, .tiles-group .tile h3 {
+  font-size: 1.25rem;
+  margin: 0px;
+  color: var(--red);
+}
+
+.tiles-group .tile p {
+  color: var(--darker-gray);
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
 /* ------- Tabs ------- */
 
 
