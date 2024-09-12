@@ -490,16 +490,18 @@ margin-bottom: 10px;
 
 .tiles-group {
   display: flex;
+  flex-wrap: wrap;
 }
 .tiles-group .tile {
   flex: 1;
+  padding: 0 7px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
 }
 
 .tiles-group .tile > a {
   padding: 20px;
   display: block;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
   height: 100%;
 }
 
