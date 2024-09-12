@@ -26,6 +26,9 @@
   --fs-lg: 1.5rem; /* 24px */
   --fs-xl: 2.25rem; /* 36px */
   --fs-xxl: 3rem; /* 48px */
+
+  /* Misc */
+  --fade: .15s ease-in-out;
 }
 .red {
 color: var(--red);
@@ -497,12 +500,17 @@ margin-bottom: 10px;
   border: 1px solid #cccccc;
   border-radius: 3px;
   height: 100%;
-  padding: 20px;
 }
 
 .tiles-group .tile > a {
   display: block;
   height: 100%;
+  padding: 20px;
+  transition: var(--fade);
+}
+
+.tiles-group .tile > a:hover {
+  background-color: var(--bg-gray);
 }
 
 .tiles-group .tile h2, .tiles-group .tile h3 {
