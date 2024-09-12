@@ -514,6 +514,7 @@ margin-bottom: 10px;
   padding: 20px;
   transition: var(--anim-fade);
   text-decoration: none !important;
+}
 
 .tiles-group .tile.tile-sm > a {
   padding: 15px;
