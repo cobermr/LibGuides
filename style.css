@@ -513,6 +513,7 @@ margin-bottom: 10px;
   height: 100%;
   padding: 20px;
   transition: var(--anim-fade);
+  text-decoration: none !important;
 }
 
 .tiles-group .tile > a:hover {
