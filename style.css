@@ -621,7 +621,7 @@ color: var(--red);
   border-radius: 5px;
   color: #000 !important;
   font-family: var(--font);
-  font-size: var(--fs-xs) !important;
+  font-size: var(--fs-xxs) !important;
   font-weight: 600 !important;
   padding: 7px 10px;
   margin-right: 4px;
