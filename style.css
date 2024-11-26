@@ -555,14 +555,13 @@ padding: 10px 40px 10px 10px;
 margin-right: 7px;
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
-border-left: 1px solid var(--light-gray) !important;
+border-bottom: 1px solid #fff;
 background-color: #fff;
-color: var(--red);
+color: #000;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
 background-color: #efefef;
 border: 1px solid var(--light-gray);
-color: #000 !important;
 }
 .s-lib-jqtabs ul.nav-tabs li a:after {
 right: 15px;
@@ -571,6 +570,7 @@ left:auto;
 .s-lib-jqtabs .tab-content {
 padding: 25px 35px;
 border-radius: 0 10px 10px 10px !important;
+border: 1px solid var(--light-gray);
 }
 
 /* Tab Arrow */
@@ -578,8 +578,6 @@ border-radius: 0 10px 10px 10px !important;
 content: "\f107";
 color: var(--dark-gray);
 position: absolute;
-left: 15px;
-right: auto;
 margin-top: -5px;
 font-family: "FontAwesome";
 font-size:  var(--fs-lg);
