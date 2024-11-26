@@ -545,6 +545,9 @@ margin-bottom: 10px;
 
 /* ------- Tabs ------- */
 
+.s-lib-jqtabs ul.nav-tabs {
+  border-bottom:none;
+}
 .s-lib-jqtabs ul.nav-tabs li {
 width: auto;
 }
@@ -557,7 +560,7 @@ margin-right: 7px;
 .s-lib-jqtabs ul.nav-tabs li.active a {
 border-bottom: 1px solid #fff;
 background-color: #fff;
-color: #000;
+color: #000 !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
 background-color: #efefef;
@@ -568,7 +571,7 @@ right: 15px;
 left:auto;
 }
 .s-lib-jqtabs .tab-content {
-padding: 25px 35px;
+padding: 25px 35px !important;
 border-radius: 0 10px 10px 10px !important;
 border: 1px solid var(--light-gray);
 }
