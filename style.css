@@ -566,6 +566,9 @@ color: #000 !important;
 background-color: #efefef;
 border: 1px solid var(--light-gray);
 }
+.s-lib-jqtabs ul.nav-tabs li a:hover {
+  outline:none;
+}
 .s-lib-jqtabs ul.nav-tabs li a:after {
 right: 15px;
 left:auto;
