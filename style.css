@@ -552,20 +552,18 @@ width: auto;
 border-radius: 5px 5px 0 0;
 border-bottom: 0px;
 padding: 10px 40px 10px 10px;
-border-top: 5px solid var(--light-gray);
 margin-right: 7px;
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
-border-top: 5px solid var(--red) !important;
 border-left: 1px solid var(--light-gray) !important;
 background-color: #fff;
 color: var(--red);
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
-background-color: #fff;
+background-color: #efefef;
 border-top: 5px solid var(--light-gray) !important;
 border-bottom: 1px solid var(--light-gray);
-color: #000;
+color: #000 !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a:hover {
 border-top: 5px solid var(--dark-gray) !important;
