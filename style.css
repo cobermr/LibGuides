@@ -65,7 +65,7 @@ transition: none;
 :focus:not(:focus-visible) { 
   outline: none !important;
 }
-button:focus, a.cta:focus {
+button:focus-visible, a.cta:focus-visible {
 border: 2px solid #000 !important;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -557,13 +557,14 @@ width: auto;
 .s-lib-jqtabs ul.nav-tabs li a {
 border-radius: 5px 5px 0 0;
 border-bottom: 0px;
-padding: 15px 15px 15px 35px;
+padding: 15px 15px 15px 40px;
 margin-right: 7px;
+color: #000 !important;
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
 border-bottom: 1px solid #fff;
 background-color: #fff;
-color: #000 !important;
+color: var(--red) !important;
 text-decoration: none !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
@@ -573,10 +574,6 @@ border: 1px solid var(--light-gray);
 .s-lib-jqtabs ul.nav-tabs li a:hover {
   outline:none;
 }
-/*.s-lib-jqtabs ul.nav-tabs li a:after {
-right: 15px;
-left:auto;
-}*/
 .s-lib-jqtabs .tab-content {
 padding: 25px 35px !important;
 border-radius: 0 10px 10px 10px !important;
@@ -589,7 +586,7 @@ content: "\f107";
 color: var(--dark-gray);
 position: absolute;
 margin-top: -5px;
-left: 10px;
+left: 13px;
 font-family: "FontAwesome";
 font-size:  var(--fs-lg);
 font-weight: 600;
