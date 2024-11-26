@@ -546,7 +546,7 @@ margin-bottom: 10px;
 /* ------- Tabs ------- */
 
 .s-lib-jqtabs ul.nav-tabs {
-  border-bottom:none;
+  border-bottom: 0px;
 }
 .s-lib-jqtabs ul.nav-tabs li {
 width: auto;
