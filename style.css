@@ -554,13 +554,14 @@ width: auto;
 .s-lib-jqtabs ul.nav-tabs li a {
 border-radius: 5px 5px 0 0;
 border-bottom: 0px;
-padding: 10px 40px 10px 10px;
+padding: 10px 10px 10px 35px;
 margin-right: 7px;
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
 border-bottom: 1px solid #fff;
 background-color: #fff;
 color: #000 !important;
+text-decoration: none !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
 background-color: #efefef;
@@ -569,10 +570,10 @@ border: 1px solid var(--light-gray);
 .s-lib-jqtabs ul.nav-tabs li a:hover {
   outline:none;
 }
-.s-lib-jqtabs ul.nav-tabs li a:after {
+/*.s-lib-jqtabs ul.nav-tabs li a:after {
 right: 15px;
 left:auto;
-}
+}*/
 .s-lib-jqtabs .tab-content {
 padding: 25px 35px !important;
 border-radius: 0 10px 10px 10px !important;
@@ -580,18 +581,19 @@ border: 1px solid var(--light-gray);
 }
 
 /* Tab Arrow */
-.s-lib-jqtabs ul.nav-tabs li a:after {
+.s-lib-jqtabs ul.nav-tabs li a:before {
 content: "\f107";
 color: var(--dark-gray);
 position: absolute;
 margin-top: -5px;
+left: 10px;
 font-family: "FontAwesome";
 font-size:  var(--fs-lg);
 font-weight: 600;
 transform: rotate(-90deg);
 transition: var(--anim-arrow);
 }
-.s-lib-jqtabs ul.nav-tabs li.active a::after {
+.s-lib-jqtabs ul.nav-tabs li.active a:before {
 transform: rotate(0deg);
 transition: var(--anim-arrow);
 color: var(--red);
