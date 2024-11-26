@@ -545,8 +545,44 @@ margin-bottom: 10px;
 
 /* ------- Tabs ------- */
 
+/* NEW
+.s-lib-jqtabs ul.nav-tabs li {
+width: auto;
+}
+.s-lib-jqtabs ul.nav-tabs li a {
+border-radius: 5px 5px 0 0;
+border-bottom: 0px;
+padding: 10px 40px 10px 10px;
+border-top: 5px solid var(--light-gray);
+margin-right: 7px;
+}
+.s-lib-jqtabs ul.nav-tabs li.active a {
+border-top: 5px solid var(--red) !important;
+border-left: 1px solid var(--light-gray) !important;
+background-color: #fff;
+color: var(--red);
+}
+.s-lib-jqtabs ul.nav-tabs li:not(.active) a {
+background-color: #fff;
+border-top: 5px solid var(--light-gray) !important;
+border-bottom: 1px solid var(--light-gray);
+color: #000;
+}
+.s-lib-jqtabs ul.nav-tabs li:not(.active) a:hover {
+border-top: 5px solid var(--dark-gray) !important;
+}
+.s-lib-jqtabs ul.nav-tabs li a:after {
+right: 15px;
+left:auto;
+}
+.s-lib-jqtabs .tab-content {
+padding: 25px 35px;
+border-radius: 0 10px 10px 10px !important;
+}
+*/
 
-.s-lib-jqtabs ul.nav-tabs > li > a:focus {
+
+/*.s-lib-jqtabs ul.nav-tabs > li > a:focus {
   border-bottom: 1px dotted #000 !important;
   border-left: 1px dotted #000 !important;
   border-right: 1px dotted #000 !important;
@@ -589,7 +625,7 @@ border-bottom: 1px solid #fff !important;
 padding: 20px 25px;
 border: 1px solid var(--light-gray);
 border-radius: 0 0px 10px 10px;
-}
+}*/
 
 /* Tab Arrow */
 .s-lib-jqtabs ul.nav-tabs li a:after {
@@ -902,39 +938,7 @@ text-align: left;
 margin: 11px 0 21px;
 }
 /* ------- Tabs ------- */
-/*.s-lib-jqtabs ul.nav-tabs li {
-width: auto;
-}
-.s-lib-jqtabs ul.nav-tabs li a {
-border-radius: 5px 5px 0 0;
-border-bottom: 0px;
-padding: 10px 40px 10px 10px;
-border-top: 5px solid var(--light-gray);
-margin-right: 7px;
-}
-.s-lib-jqtabs ul.nav-tabs li.active a {
-border-top: 5px solid var(--red) !important;
-border-left: 1px solid var(--light-gray) !important;
-background-color: #fff;
-color: var(--red);
-}
-.s-lib-jqtabs ul.nav-tabs li:not(.active) a {
-background-color: #fff;
-border-top: 5px solid var(--light-gray) !important;
-border-bottom: 1px solid var(--light-gray);
-color: #000;
-}
-.s-lib-jqtabs ul.nav-tabs li:not(.active) a:hover {
-border-top: 5px solid var(--dark-gray) !important;
-}
-.s-lib-jqtabs ul.nav-tabs li a:after {
-right: 15px;
-left:auto;
-}
-.s-lib-jqtabs .tab-content {
-padding: 25px 35px;
-border-radius: 0 10px 10px 10px !important;
-}*/
+
 }
 
 /*  ------- [OLD] LARGE DEVICES (large desktops, 1200px and up) -------  */
