@@ -563,7 +563,7 @@ width: 100%;
 }
 .s-lib-jqtabs ul.nav-tabs li a {
 color: #000;
-font-size: var(--fs-md);
+font-size: var(--fs-sm);
 font-weight: 500;
 border-radius: 0;
 border: 1px solid var(--light-gray);
@@ -902,7 +902,7 @@ text-align: left;
 margin: 11px 0 21px;
 }
 /* ------- Tabs ------- */
-.s-lib-jqtabs ul.nav-tabs li {
+/*.s-lib-jqtabs ul.nav-tabs li {
 width: auto;
 }
 .s-lib-jqtabs ul.nav-tabs li a {
@@ -934,7 +934,7 @@ left:auto;
 .s-lib-jqtabs .tab-content {
 padding: 25px 35px;
 border-radius: 0 10px 10px 10px !important;
-}
+}*/
 }
 
 /*  ------- [OLD] LARGE DEVICES (large desktops, 1200px and up) -------  */
