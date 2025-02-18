@@ -15,7 +15,6 @@
   --red: #b1160b;
   --light-red: #ffebeb;
   --white: #ffffff;
-  /* OLD --red: #bf2117; */
 
   /* Fonts */
   --font: Poppins,Helvetica,"sans-serif";
@@ -51,7 +50,7 @@ p {
 line-height: 1.6em;
 }
 a {
-  color: var(--red);
+  color: var(--red) !important;
   font-weight: 600;
   text-decoration: underline;
 }
