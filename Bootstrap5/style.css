@@ -26,11 +26,13 @@
   --fs-xl: 2.25rem; /* 36px */
   --fs-xxl: 3rem; /* 48px */
 
-  /* Misc */
+  /* Animations */
   --anim-fade: .15s ease-in-out;
   --anim-arrow: all .5s ease;
   --anim-arrow-fast: 0.2s ease-in;
 }
+
+/* ------- General ------- */
 html {
   font-size: initial !important;
   font-family: var(--font);
@@ -54,4 +56,5 @@ a {
   font-weight: 600;
   text-decoration: underline;
 }
+
 
