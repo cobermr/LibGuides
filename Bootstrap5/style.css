@@ -54,7 +54,7 @@ p {
 h1, h2, h3, h4, h5 {
   font-family: var(--font);
   color: var(--dark-gray) !important;
-  font-weight: 700;
+  font-weight: 700 !important;
   margin-top: 10px;
 }
 .s-lib-box .s-lib-box-title {
@@ -74,6 +74,23 @@ h1, h2, h3, h4, h5 {
 .s-lib-box .s-lib-box-content {
   padding: 10px 0px;
   }
+
+  /* ------- Sidebar ------- */
+  #s-lg-col-0 .s-lib-box {
+    padding: 10px 20px;
+    font-family: var(--font);
+    font-size:  var(--fs-xs);
+    background-color: var(--bg-gray);
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: none;
+    }
+    #s-lg-col-0 .s-lib-box h2 {
+      font-size: var(--fs-lg);
+    }
+    #s-lg-col-0 .s-lib-box .s-lib-box-content {
+      padding: 5px 0px;
+    }
 
   /* ------- Links & Buttons ------- */
 a {
