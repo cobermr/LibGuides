@@ -90,6 +90,7 @@ a:hover {
   border-radius: 5px !important;
   border: 2px solid !important;
   background-image: none !important;
+  font-weight: 500 !important;
 }
 .btn:not(.btn-no-arrow)::after {
   content: "\f105";
@@ -110,6 +111,11 @@ a:hover {
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: var(--dark-red) !important;
+  color: var(--white) !important;
+  border-color: var(--dark-red) !important;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+  border-color: var(--red);
 }
 
 /* ------- Navigation ------- */
