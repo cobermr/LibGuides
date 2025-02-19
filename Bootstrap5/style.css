@@ -85,6 +85,24 @@ a {
 a:hover {
   color: var(--darkest-red) !important;
 }
+.btn {
+  transition: var(--anim-fade);
+  border-radius: 5px;
+  border: 2px solid;
+
+}
+.btn:not(.btn-no-arrow)::after {
+  content: "\f105";
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-left: 7px;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  transition: var(--anim-arrow-fast);
+  display: inline-block;
+}
+.btn:not(.btn-no-arrow):hover::after {
+  transform: translateX(50%);
+}
 
 /* ------- Navigation ------- */
 
@@ -105,11 +123,17 @@ a:hover {
 #guide-nav li.active > a {
   background-color: var(--red) !important;
 }
+#guide-nav .dropdown-toggle::after {
+  display: none;
+}
 /* Guide Menu -- Dropdown Menus & Submenus */
-#guide-nav ul.s-lg-subtab-ul a {
+#guide-nav .s-lg-subtab-ul {
   background-color: var(--darker-gray) !important;
 }
-#guide-nav ul.s-lg-subtab-ul a:hover {
+#guide-nav .s-lg-subtab-ul li {
+  width: 100%;
+}
+#guide-nav .s-lg-subtab-ul a:hover {
   background-color: var(--darkest-gray) !important;
 }
 
