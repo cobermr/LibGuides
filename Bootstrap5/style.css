@@ -164,9 +164,11 @@ th.hours-col-loc {
 }
 .navbar-dark .dropdown-menu {
   width: 100%;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 .navbar-dark .dropdown-menu .list-group .list-group-item {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 .dropdown-menu-dark .dropdown-header {
   color: #cbcbcb !important;
