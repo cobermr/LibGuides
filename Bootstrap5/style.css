@@ -42,13 +42,18 @@ html {
 body {
   background-color: var(--white);
   font-family: var(--font) !important;
+  padding: 0 !important;
 }
 p {
   line-height: 1.6em;
 }
-:focus:not(:focus-visible) { 
-  outline: none !important;
-}
+#s-lg-side-nav-content a:focus {
+  outline: 2px solid var(--dark-gray);
+  transition: none;
+  }
+  :focus:not(:focus-visible) { 
+    outline: none !important;
+  }
 
 /* ------- Headers ------- */
 
@@ -87,7 +92,7 @@ h1, h2, h3, h4, h5 {
     box-shadow: none;
     }
     #s-lg-col-0 .s-lib-box h2 {
-      font-size: var(--fs-lg);
+      font-size: var(--fs-md);
     }
     #s-lg-col-0 .s-lib-box .s-lib-box-content {
       padding: 5px 0px;
@@ -109,6 +114,7 @@ a:hover {
   border: 2px solid !important;
   background-image: none !important;
   font-weight: 500 !important;
+  text-shadow: none !important;
 }
 .btn:not(.btn-no-arrow)::after {
   content: "\f105";
