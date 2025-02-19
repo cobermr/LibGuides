@@ -148,7 +148,7 @@ table.hours-today {
   width: 100%;
 }
 th.hours-col-loc {
-  display: none;
+  display: none !important;
 }
 .navbar-dark {
   border-radius: 0px !important;
@@ -156,17 +156,20 @@ th.hours-col-loc {
 .navbar-dark a {
   color: var(--white) !important;
   font-weight: 500 !important;
-  transition: var(--anim-fade);
+  transition: var(--anim-fade) !important;
   text-decoration: none !important;
 }
 .navbar-dark a:hover, .navbar-dark a:active, .navbar-dark a:focus {
-  background-color: var(--black);
+  background-color: var(--black) !important;
 }
 .navbar-dark .dropdown-menu {
   width: 100%;
 }
 .navbar-dark .dropdown-menu .list-group .list-group-item {
   background-color: transparent !important;
+}
+.dropdown-menu-dark .dropdown-header {
+  color: #cbcbcb !important;
 }
 
 /* Guide Menu -- Top Level */
