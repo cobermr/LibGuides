@@ -86,10 +86,10 @@ a:hover {
   color: var(--darkest-red) !important;
 }
 .btn {
-  transition: var(--anim-fade);
-  border-radius: 5px;
-  border: 2px solid;
-
+  transition: var(--anim-fade) !important;
+  border-radius: 5px !important;
+  border: 2px solid !important;
+  background-image: none !important;
 }
 .btn:not(.btn-no-arrow)::after {
   content: "\f105";
@@ -102,6 +102,14 @@ a:hover {
 }
 .btn:not(.btn-no-arrow):hover::after {
   transform: translateX(50%);
+}
+.btn-primary {
+  background-color: var(--red) !important;
+  color: var(--white) !important;
+  border-color: var(--red) !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--dark-red) !important;
 }
 
 /* ------- Navigation ------- */
