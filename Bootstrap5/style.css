@@ -15,6 +15,7 @@
   --red: #b1160b;
   --light-red: #ffebeb;
   --white: #ffffff;
+  --black: #000000;
 
   /* Fonts */
   --font: Poppins,Helvetica,"sans-serif";
@@ -52,7 +53,7 @@ line-height: 1.6em;
 
 h1, h2, h3, h4, h5 {
   font-family: var(--font);
-  color: var(--dark-gray);
+  color: var(--dark-gray) !important;
   font-weight: 700;
   margin-top: 10px;
   }
@@ -62,6 +63,16 @@ h1, h2, h3, h4, h5 {
   padding: 10px 0;
   border-bottom: 1px solid var(--light-gray);
   margin-bottom: 10px;
+  }
+
+  /* ------- Boxes ------- */
+
+.s-lib-box {
+  border: 0px;
+  box-shadow: none;
+  }
+  .s-lib-box .s-lib-box-content {
+  padding: 10px 0px;
   }
 
 /* ------- Links & Buttons ------- */
@@ -75,12 +86,26 @@ a:hover {
   color: var(--darkest-red);
 }
 
-/* ------- Cards ------- */
-.card h1, .card h2, .card h3, .card h4, .card h5 {
-  font-size: var(--fs-sm);
+/* ------- Navigation ------- */
+
+/* Guide Menu -- Top Level */
+.s-lg-tabs-side #s-lg-guide-tabs a {
   text-decoration: none;
+  background-color: var(--black);
+  color: var(--white);
+  transition: var(--anim-fade);
+}
+
+/* ------- Cards ------- */
+.card {
+  height: 100% !important;
+  border-radius: 3px !important;
 }
 .card:hover {
   background-color: var(--bg-gray);
   transition: var(--anim-fade);
+}
+.card h1, .card h2, .card h3, .card h4, .card h5, .card a {
+  font-size: var(--fs-sm);
+  text-decoration: none;
 }
