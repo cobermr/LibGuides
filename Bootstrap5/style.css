@@ -36,17 +36,17 @@
 /* ------- General ------- */
 html {
   font-size: initial !important;
-  font-family: var(--font);
   scroll-behavior: smooth;
 }
-.red {
-color: var(--red);
-}
 body {
-background-color: var(--white);
+  background-color: var(--white);
+  font-family: var(--font) !important;
 }
 p {
-line-height: 1.6em;
+  line-height: 1.6em;
+}
+:focus:not(:focus-visible) { 
+  outline: none !important;
 }
 
 /* ------- Headers ------- */
@@ -56,26 +56,26 @@ h1, h2, h3, h4, h5 {
   color: var(--dark-gray) !important;
   font-weight: 700;
   margin-top: 10px;
-  }
-  .s-lib-box .s-lib-box-title {
+}
+.s-lib-box .s-lib-box-title {
   background-color: transparent;
   font-size: var(--fs-xl);
   padding: 10px 0;
   border-bottom: 1px solid var(--light-gray);
   margin-bottom: 10px;
-  }
+}
 
-  /* ------- Boxes ------- */
+/* ------- Boxes ------- */
 
 .s-lib-box {
   border: 0px;
   box-shadow: none;
   }
-  .s-lib-box .s-lib-box-content {
+.s-lib-box .s-lib-box-content {
   padding: 10px 0px;
   }
 
-/* ------- Links & Buttons ------- */
+  /* ------- Links & Buttons ------- */
 a {
   color: var(--red) !important;
   font-weight: 600;
@@ -83,17 +83,34 @@ a {
   transition: var(--anim-fade);
 }
 a:hover {
-  color: var(--darkest-red);
+  color: var(--darkest-red) !important;
 }
 
 /* ------- Navigation ------- */
 
 /* Guide Menu -- Top Level */
-.s-lg-tabs-side #s-lg-guide-tabs a {
+#guide-nav a {
   text-decoration: none;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--darkest-gray) !important;
+  color: var(--white) !important;
+  font-weight: 500 !important;
   transition: var(--anim-fade);
+}
+#guide-nav > li > a {
+  padding: 7px 15px !important;
+}
+#guide-nav > li > a:hover {
+  background-color: var(--darker-gray) !important;
+}
+#guide-nav li.active > a {
+  background-color: var(--red) !important;
+}
+/* Guide Menu -- Dropdown Menus & Submenus */
+#guide-nav ul.s-lg-subtab-ul a {
+  background-color: var(--darker-gray) !important;
+}
+#guide-nav ul.s-lg-subtab-ul a:hover {
+  background-color: var(--darkest-gray) !important;
 }
 
 /* ------- Cards ------- */
