@@ -150,6 +150,12 @@ table.hours-today {
 th.hours-col-loc {
   display: none !important;
 }
+.navbar-nav {
+  m
+}
+.navbar-brand {
+  height:100%;
+}
 .navbar-dark {
   border-radius: 0px !important;
 }
@@ -164,6 +170,7 @@ th.hours-col-loc {
 }
 .navbar-dark .dropdown-menu {
   width: 100%;
+  background-color: var(--darker-gray);
 }
 .navbar-dark .dropdown-menu .list-group .list-group-item {
   background-color: transparent;
@@ -172,9 +179,6 @@ th.hours-col-loc {
   color: #cbcbcb !important;
   letter-spacing: 1px;
   font-weight: 600;
-}
-.navbar-collapse {
-  margin-top: 8px !important;
 }
 
 /* Guide Menu -- Top Level */
