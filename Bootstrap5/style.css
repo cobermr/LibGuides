@@ -6,7 +6,7 @@
 :root {
   /* Colors */
   --darkest-gray: #111111;
-  --darker-gray: #333333;
+  --darker-gray: #343A40;
   --dark-gray: #555555;
   --medium-gray: #787878;
   --light-gray: #dddddd;
@@ -108,6 +108,9 @@ a {
 a:hover {
   color: var(--darkest-red) !important;
 }
+a:focus, .btn:focus {
+  outline: 2px solid #000;
+}
 .btn {
   transition: var(--anim-fade) !important;
   border-radius: 5px !important;
@@ -170,7 +173,6 @@ th.hours-col-loc {
 }
 .navbar-dark .dropdown-menu {
   width: 100%;
-  background-color: var(--darker-gray);
 }
 .navbar-dark .dropdown-menu .list-group .list-group-item {
   background-color: transparent;
@@ -225,3 +227,5 @@ th.hours-col-loc {
   font-size: var(--fs-sm);
   text-decoration: none;
 }
+
+/* ------- OneSearch ------- */
