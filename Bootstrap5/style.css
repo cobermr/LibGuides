@@ -107,9 +107,10 @@ a {
 }
 a:hover {
   color: var(--darkest-red) !important;
+  outline: none !important;
 }
 a:focus, .btn:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #000 !important;
 }
 .btn {
   transition: var(--anim-fade) !important;
