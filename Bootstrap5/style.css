@@ -120,7 +120,7 @@ a:focus, .btn:focus {
   font-weight: 500 !important;
   text-shadow: none !important;
 }
-.btn:not(.btn-no-arrow)::after {
+.btn:not(.btn-no-arrow):not(.stretched-link)::after {
   content: "\f105";
   font: normal normal normal 14px/1 FontAwesome;
   margin-left: 7px;
