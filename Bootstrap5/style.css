@@ -229,4 +229,19 @@ th.hours-col-loc {
   text-decoration: none;
 }
 
+/* ------- Tabs ------- */
+.s-lib-jqtabs ul.nav-tabs li a {
+  font-size: 1rem;
+  color: var(--bs-accordion-btn-color) !important;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 1.25rem;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid var(--bs-accordion-border-color) !important;
+}
+.s-lib-jqtabs ul.nav-tabs li.active a {
+  color: var(--bs-accordion-active-color) !important;
+  background-color: var(--bs-accordion-active-bg);
+}
+
 /* ------- OneSearch ------- */
