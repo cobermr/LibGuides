@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
   // Accordions
 
   /**
@@ -155,6 +153,3 @@
   }
 
 })(jQuery);
-
-
-</script>
