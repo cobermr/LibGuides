@@ -5,11 +5,11 @@
 
 :root {
   /* Colors */
-  --darkest-gray: #111111;
+  --darkest-gray: #212529;
   --darker-gray: #343A40;
   --dark-gray: #555555;
   --medium-gray: #787878;
-  --light-gray: #dddddd;
+  --light-gray: #dee2e6;
   --bg-gray: #f5f5f5;
   --darkest-red: #6f0700;
   --dark-red: #880f07;
@@ -17,6 +17,8 @@
   --light-red: #ffebeb;
   --white: #ffffff;
   --black: #000000;
+  --blue: #0c63e4;
+  --blue-bg: #e7f1ff;
 
   /* Fonts */
   --font: Poppins,Helvetica,"sans-serif";
@@ -232,16 +234,16 @@ th.hours-col-loc {
 /* ------- Tabs ------- */
 .s-lib-jqtabs ul.nav-tabs li a {
   font-size: 1rem;
-  color: var(--bs-accordion-btn-color) !important;
+  color: var(--darkest-gray) !important;
   font-weight: 700;
   text-decoration: none;
   padding: 1rem 1.25rem;
   border-radius: 5px 5px 0 0;
-  border: 1px solid var(--bs-accordion-border-color) !important;
+  border: 1px solid var(--light-gray) !important;
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
-  color: var(--bs-accordion-active-color) !important;
-  background-color: var(--bs-accordion-active-bg);
+  color: var(--blue) !important;
+  background-color: var(--blue-bg) !important;
 }
 
 /* ------- OneSearch ------- */
