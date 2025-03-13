@@ -1,3 +1,19 @@
+  //Move side boxes below main content on mobile devices
+
+$(document).ready(function() {
+  checkSize();
+  $(window).resize(checkSize);
+});
+
+function checkSize(){
+  if ($("#mobile-indicator").is(':visible')){
+      $('#s-lg-col-0').detach().appendTo('#s-lg-guide-main');
+  }
+  else {
+      $('#s-lg-col-0').detach().appendTo('#s-lg-guide-tabs > .s-lg-row');
+  }
+}
+  
   // Accordions
 
   /**
