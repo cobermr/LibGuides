@@ -83,23 +83,6 @@ h1, h2, h3, h4, h5 {
   padding: 10px 0px;
   }
 
-  /* ------- Sidebar ------- */
-  #s-lg-col-0 .s-lib-box {
-    padding: 10px 20px;
-    font-family: var(--font);
-    font-size:  var(--fs-xs);
-    background-color: var(--bg-gray);
-    border-radius: 0.75rem;
-    border: none;
-    box-shadow: none;
-    }
-    #s-lg-col-0 .s-lib-box h2 {
-      font-size: var(--fs-md);
-    }
-    #s-lg-col-0 .s-lib-box .s-lib-box-content {
-      padding: 5px 0px;
-    }
-
   /* ------- Links & Buttons ------- */
 a {
   color: var(--red) !important;
@@ -256,3 +239,37 @@ th.hours-col-loc {
 }
 
 /* ------- OneSearch ------- */
+
+/* -------------- Media Queries -------------- */
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    /* ------- Sidebar Boxes ------- */
+    #s-lg-col-0 .s-lib-box {
+      padding: 10px 20px;
+      font-family: var(--font);
+      font-size:  var(--fs-xs);
+      background-color: var(--bg-gray);
+      border-radius: 0.75rem;
+      border: none;
+      box-shadow: none;
+      }
+      #s-lg-col-0 .s-lib-box h2 {
+        font-size: var(--fs-md);
+      }
+      #s-lg-col-0 .s-lib-box .s-lib-box-content {
+        padding: 5px 0px;
+      }  
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { ... }
