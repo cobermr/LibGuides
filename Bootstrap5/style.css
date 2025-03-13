@@ -237,13 +237,22 @@ th.hours-col-loc {
   color: var(--darkest-gray) !important;
   font-weight: 700;
   text-decoration: none;
-  padding: 1rem 1.25rem;
+  padding: .75rem 1.25rem;
   border-radius: 5px 5px 0 0;
   border: 1px solid var(--light-gray) !important;
+  margin-right: 4px !important;
+}
+.s-lib-jqtabs ul.nav-tabs li a:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-color: #86b7fe;
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
   color: var(--blue) !important;
   background-color: var(--blue-bg) !important;
+}
+.s-lib-jqtabs .tab-content {
+  padding: 1rem 1.25rem !important;
+  border-radius: 0 0 5px 5px !important;
 }
 
 /* ------- OneSearch ------- */
