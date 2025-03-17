@@ -1,3 +1,25 @@
+  //Move side boxes below main content on mobile devices
+
+$(document).ready(function() {
+  checkSize();
+  $(window).resize(checkSize);
+});
+
+function checkSize(){
+  if ($("#mobile-indicator").is(':visible')){
+      $('#s-lg-col-0').detach().appendTo('#s-lg-guide-main');
+  }
+  else {
+      $('#s-lg-col-0').detach().appendTo('#s-lg-guide-tabs > .s-lg-row');
+  }
+}
+  
+  // Accordions
+
+  /**
+ * Converts tabs with [Accordion] in title to Bootstrap 5 Accordions
+ * Only activates when URL does not contain "admin_c"
+ */
 (function($) {
   if (window.location.href.indexOf('admin_c') >= 0) {
     return; // Skip execution of the entire script
@@ -5,61 +27,35 @@
 
   function convertTabsToAccordions() {
     $('.s-lib-jqtabs').each(function() {
-      // Check if mobile indicator is visible
-      const isMobile = $('#mobile-indicator').is(':visible');
-      const $tabsContainer = $(this);
-      const $box = $tabsContainer.closest('.s-lib-box');
+      var $box = $(this).closest('.s-lib-box');
+      if (!$box.length) return;
       
-      // For non-mobile view, restore tabs if they were previously converted
-      if (!isMobile) {
-        if ($tabsContainer.data('accordion-initialized')) {
-          restoreTabsFromAccordion($tabsContainer);
-        }
-        return;
-      }
+      var $title = $box.find('h2.s-lib-box-title');
+      if (!$title.length) return;
       
-      // Skip if already converted to accordion
-      if ($tabsContainer.data('accordion-initialized')) {
-        return;
-      }
+      var titleHTML = $title.html();
+      if (titleHTML.indexOf('[Accordion]') === -1) return;
       
-      // Check if it has [Accordion] in the title (for backward compatibility)
-      const shouldConvert = isMobile || ($box.length && 
-        $box.find('h2.s-lib-box-title').length && 
-        $box.find('h2.s-lib-box-title').html().indexOf('[Accordion]') !== -1);
+      $title.html(titleHTML.replace('[Accordion]', ''));
       
-      if (!shouldConvert) return;
-      
-      // If it has [Accordion] in title, remove the tag
-      if ($box.length) {
-        const $title = $box.find('h2.s-lib-box-title');
-        if ($title.length && $title.html().indexOf('[Accordion]') !== -1) {
-          $title.html($title.html().replace('[Accordion]', ''));
-        }
-      }
-      
-      // Store original tabs structure
-      $tabsContainer.data('original-tabs', $tabsContainer.clone(true));
-      $tabsContainer.data('accordion-initialized', true);
-      
-      const $tabList = $tabsContainer.find('ul.nav-tabs');
-      const $tabContent = $tabsContainer.find('.tab-content');
+      var $tabList = $(this).find('ul.nav-tabs');
+      var $tabContent = $(this).find('.tab-content');
       if (!$tabList.length || !$tabContent.length) return;
       
-      const sectionId = 'section-' + Math.floor(Math.random() * 1000000);
-      const accordionId = 'accordion-' + Math.floor(Math.random() * 1000000);
+      var sectionId = 'section-' + Math.floor(Math.random() * 1000000);
+      var accordionId = 'accordion-' + Math.floor(Math.random() * 1000000);
 
-      const $sectionWrapper = $('<div>', { 'id': sectionId, 'class': 'responsive-accordion-wrapper' });
+      var $sectionWrapper = $('<div>', { 'id': sectionId });
 
-      const $accordion = $('<div>', {
+      var $accordion = $('<div>', {
         'class': 'accordion',
         'id': accordionId
       });
 
       // Create Expand All / Collapse All buttons aligned to the right
-      const $buttonContainer = $('<div>', { 'class': 'mb-2 d-flex justify-content-end' });
+      var $buttonContainer = $('<div>', { 'class': 'mb-2 d-flex justify-content-end' });
 
-      const $expandAllButton = $('<button>', {
+      var $expandAllButton = $('<button>', {
         'class': 'btn btn-sm btn-light btn-no-arrow me-2',
         'text': 'Expand All',
         'click': function() {
@@ -68,7 +64,7 @@
         }
       });
 
-      const $collapseAllButton = $('<button>', {
+      var $collapseAllButton = $('<button>', {
         'class': 'btn btn-sm btn-light btn-no-arrow',
         'text': 'Collapse All',
         'click': function() {
@@ -80,16 +76,16 @@
       $buttonContainer.append($expandAllButton, $collapseAllButton);
 
       $tabList.find('a[role="tab"]').each(function(index) {
-        const panelId = $(this).attr('aria-controls');
-        const $panel = $('#' + panelId);
+        var panelId = $(this).attr('aria-controls');
+        var $panel = $('#' + panelId);
         if (!$panel.length) return;
 
-        const headingId = 'heading-' + panelId;
-        const collapseId = 'collapse-' + panelId;
+        var headingId = 'heading-' + panelId;
+        var collapseId = 'collapse-' + panelId;
 
-        const $accordionItem = $('<div>', { 'class': 'accordion-item' });
-        const $accordionHeader = $('<h2>', { 'class': 'accordion-header', 'id': headingId });
-        const $accordionButton = $('<button>', {
+        var $accordionItem = $('<div>', { 'class': 'accordion-item' });
+        var $accordionHeader = $('<h2>', { 'class': 'accordion-header', 'id': headingId });
+        var $accordionButton = $('<button>', {
           'class': 'accordion-button' + (index === 0 ? '' : ' collapsed'),
           'type': 'button',
           'data-bs-toggle': 'collapse',
@@ -99,14 +95,14 @@
           'html': $(this).html()
         });
 
-        const $accordionCollapse = $('<div>', {
+        var $accordionCollapse = $('<div>', {
           'id': collapseId,
           'class': 'accordion-collapse collapse' + (index === 0 ? ' show' : ''),
           'aria-labelledby': headingId,
           'data-bs-parent': '#' + accordionId
         });
 
-        const $accordionBody = $('<div>', {
+        var $accordionBody = $('<div>', {
           'class': 'accordion-body',
           'html': $panel.html()
         });
@@ -118,7 +114,7 @@
       });
 
       // Create "Top of Section" link with faster scrolling
-      const $backToTop = $('<div>', { 'class': 'mt-3 d-flex justify-content-end' }).append(
+      var $backToTop = $('<div>', { 'class': 'mt-3 d-flex justify-content-end' }).append(
         $('<a>', {
           'href': '#' + sectionId,
           'class': 'small text-muted',
@@ -132,43 +128,23 @@
 
       // Insert everything into a wrapper div
       $sectionWrapper.append($buttonContainer, $accordion, $backToTop);
-      $tabsContainer.after($sectionWrapper);
-      $tabsContainer.hide();
+      $(this).replaceWith($sectionWrapper);
     });
   }
 
-  // Function to restore tabs from accordion
-  function restoreTabsFromAccordion($tabsContainer) {
-    const $accordion = $tabsContainer.next('.responsive-accordion-wrapper');
-    if ($accordion.length) {
-      $accordion.remove();
-      $tabsContainer.show();
-    }
-  }
-
-  // Check viewport size and convert tabs on page load
-  function checkViewportAndConvert() {
-    convertTabsToAccordions();
-  }
-
   $(document).ready(function() {
-    checkViewportAndConvert();
-  });
-
-  // React to window resize
-  $(window).on('resize', function() {
-    checkViewportAndConvert();
+    convertTabsToAccordions();
   });
 
   if (typeof MutationObserver !== 'undefined') {
-    const observer = new MutationObserver(function(mutations) {
+    var observer = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
         if (mutation.addedNodes && mutation.addedNodes.length > 0) {
-          const $addedNodes = $(mutation.addedNodes);
-          const hasTabs = $addedNodes.find('.s-lib-jqtabs').length > 0 || 
+          var $addedNodes = $(mutation.addedNodes);
+          var hasTabs = $addedNodes.find('.s-lib-jqtabs').length > 0 || 
                         $addedNodes.filter('.s-lib-jqtabs').length > 0;
           if (hasTabs) {
-            checkViewportAndConvert();
+            convertTabsToAccordions();
           }
         }
       });
@@ -182,12 +158,12 @@
 
   if (typeof springSpace !== 'undefined') {
     $(document).on('s-lib-widget-refresh-complete', function() {
-      checkViewportAndConvert();
+      convertTabsToAccordions();
     });
 
     if (springSpace.event) {
       springSpace.event.subscribe('content.loaded', function() {
-        checkViewportAndConvert();
+        convertTabsToAccordions();
       });
     }
   }
