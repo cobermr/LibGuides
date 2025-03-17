@@ -11,6 +11,7 @@
   --medium-gray: #787878;
   --light-gray: #dee2e6;
   --bg-gray: #f5f5f5;
+  --gray-border: #dee2e6;
   --darkest-red: #6f0700;
   --dark-red: #880f07;
   --red: #b1160b;
@@ -139,9 +140,6 @@ table.hours-today {
 th.hours-col-loc {
   display: none !important;
 }
-.navbar-nav {
-  m
-}
 .navbar-brand {
   height:100%;
 }
@@ -243,7 +241,9 @@ th.hours-col-loc {
 /* -------------- Media Queries -------------- */
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {
+  
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
@@ -252,9 +252,8 @@ th.hours-col-loc {
       padding: 10px 20px;
       font-family: var(--font);
       font-size:  var(--fs-xs);
-      background-color: var(--bg-gray);
       border-radius: 0.75rem;
-      border: none;
+      border: 1px solid var(--gray-border);
       box-shadow: none;
       }
       #s-lg-col-0 .s-lib-box h2 {
@@ -263,13 +262,24 @@ th.hours-col-loc {
       #s-lg-col-0 .s-lib-box .s-lib-box-content {
         padding: 5px 0px;
       }  
+
+      /* ------- Sidebar Tabs ------- */
+      #s-lg-col-0 .s-lib-jqtabs .tab-content {
+        border: 0 !important;
+      }
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+  
+}
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {
+  
+}
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) { ... }
+@media (min-width: 1400px) {
+  
+}
