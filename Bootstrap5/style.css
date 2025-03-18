@@ -251,6 +251,14 @@ th.hours-col-loc {
 .lci_chat_load {
   border: 0 !important;
 }
+.s-lc-w-today th.s-lc-w-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.s-lc-w-today .s-lc-w-head-pre {
+  width: 100% !important;
+}
 
 /* -------------- Media Queries -------------- */
 
