@@ -228,12 +228,18 @@ th.hours-col-loc {
   border-color: #86b7fe;
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
-  color: var(--blue) !important;
-  background-color: var(--blue-bg) !important;
+  color: var(--red) !important;
+  background-color: var(--bg-gray) !important;
 }
 .s-lib-jqtabs .tab-content {
   padding: 1rem 1.25rem !important;
   border-radius: 0 0 5px 5px !important;
+}
+
+/* ------- Accordions ------- */
+.accordion-button:not(.collapsed) {
+  color: var(--red) !important;
+  background-color: var(--bg-gray) !important;
 }
 
 /* ------- OneSearch ------- */
