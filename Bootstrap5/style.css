@@ -282,11 +282,14 @@ th.hours-col-loc {
       }  
 
       /* ------- Sidebar Tabs ------- */
-      #s-lg-col-0  .s-lib-jqtabs .nav-tabs li a {
+      #s-lg-col-0  .s-lib-jqtabs .nav-tabs li a, #s-lg-col-0  .s-lib-jqtabs .nav-tabs li a:hover {
         border-radius: 5px;
+        padding: 7px 10px;
+        font-size: var(--fs-xs);
       }
       #s-lg-col-0 .s-lib-jqtabs .tab-content {
         border: 0 !important;
+        padding: 0px !important;
       }
 }
 
