@@ -56,7 +56,7 @@ function checkSize(){
       var $buttonContainer = $('<div>', { 'class': 'mb-2 d-flex justify-content-end' });
 
       var $expandAllButton = $('<button>', {
-        'class': 'btn btn-sm btn-light btn-no-arrow me-2',
+        'class': 'btn btn-sm btn-link text-muted btn-no-arrow me-2',
         'text': 'Expand All',
         'click': function() {
           $('#' + accordionId + ' .accordion-collapse').addClass('show');
@@ -65,7 +65,7 @@ function checkSize(){
       });
 
       var $collapseAllButton = $('<button>', {
-        'class': 'btn btn-sm btn-light btn-no-arrow',
+        'class': 'btn btn-sm btn-link text-muted btn-no-arrow',
         'text': 'Collapse All',
         'click': function() {
           $('#' + accordionId + ' .accordion-collapse').removeClass('show');
