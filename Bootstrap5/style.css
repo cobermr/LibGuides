@@ -8,7 +8,7 @@
   --darkest-gray: #212529;
   --darker-gray: #343A40;
   --dark-gray: #555555;
-  --medium-gray: #787878;
+  --medium-gray: #696969;
   --light-gray: #dee2e6;
   --bg-gray: #f5f5f5;
   --gray-border: #dee2e6;
@@ -223,14 +223,9 @@ th.hours-col-loc {
   border: 1px solid var(--light-gray) !important;
   margin-right: 4px !important;
 }
-.s-lib-jqtabs ul.nav-tabs li a:focus. .s-lib-jqtabs ul.nav-tabs li a:focus-visible {
-  box-shadow: 0 0 0 0.2rem rgba(177, 22, 11, 0.25);
-  border-color: var(--red) !important;
-  outline: none !important;
-}
 .s-lib-jqtabs ul.nav-tabs li.active a {
-  color: var(--red) !important;
-  background-color: var(--light-red) !important;
+  color: #fff !important;
+  background-color: var(--medium-gray) !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
   background-color: #fff !important;
@@ -243,18 +238,19 @@ th.hours-col-loc {
 
 /* ------- Accordions ------- */
 .accordion-button:not(.collapsed) {
-  color: var(--red) !important;
-  background-color: var(--light-red) !important;
+  color: #fff !important;
+  background-color: var(--medium-gray) !important;
 }
 .accordion-button:not(.collapsed):after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23b1160b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
-}
-.accordion-button:focus {
-  box-shadow: 0 0 0 0.25rem rgba(177, 22, 11, 0.25);
-  border-color: #ff9e9e !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 
 /* ------- OneSearch ------- */
+
+/* ------- Miscellaneous ------- */
+.lci_chat_load {
+  border: 0 !important;
+}
 
 /* -------------- Media Queries -------------- */
 
@@ -282,6 +278,9 @@ th.hours-col-loc {
       }  
 
       /* ------- Sidebar Tabs ------- */
+      #s-lg-col-0  .s-lib-jqtabs .nav-tabs {
+        margin-bottom: 20px !important;
+      }
       #s-lg-col-0  .s-lib-jqtabs .nav-tabs li a, #s-lg-col-0  .s-lib-jqtabs .nav-tabs li a:hover {
         border-radius: 5px;
         padding: 7px 10px;
