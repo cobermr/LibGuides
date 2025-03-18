@@ -136,6 +136,10 @@ a.text-muted:hover {
 }
 .btn-link {
   border: 0 !important;
+  font-weight: 600 !important;
+}
+.btn-link.text-muted:hover {
+  color: #000 !important;
 }
 
 /* ------- Navigation ------- */
@@ -231,16 +235,15 @@ th.hours-col-loc {
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
   color: var(--white) !important;
-  background-color: var(--red) !important;
-  border-color: var(--red) !important;
+  background-color: var(--dark-gray) !important;
+  border-color: 0 !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
-  background-color: #fff !important;
-  color: var(--darkest-gray) !important;
+  background-color: #000 !important;
+  color: var(--light-gray) !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a:hover {
-  background-color: var(--bg-gray) !important;
-  color: var(--red) !important;
+  background-color: #bbbbbb !important;
 }
 .s-lib-jqtabs .tab-content {
   padding: 1rem 1.25rem !important;
@@ -268,11 +271,15 @@ th.hours-col-loc {
   justify-content: space-between;
 }*/
 .s-lc-w-today .s-lc-w-head-pre {
+  display: none;
+}
+.s-lc-w-today span:not(.s-lc-w-head-pre) {
   display: block;
   clear: both;
-  color: var(--dark-gray);
-  font-size: var(--fs-md);
-  padding: 10px 0px;
+  padding: 15px 0px 10px;
+}
+.s-lc-w-today .s-lc-w-time {
+  font-weight: normal;
 }
 
 /* -------------- Media Queries -------------- */
