@@ -98,6 +98,9 @@ a:hover {
 a:focus, .btn:focus {
   outline: 2px solid #000 !important;
 }
+a.text-muted:hover {
+  color: #000 !important;
+}
 .btn {
   transition: var(--anim-fade) !important;
   border-radius: 5px !important;
@@ -130,6 +133,9 @@ a:focus, .btn:focus {
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active {
   border-color: var(--red);
+}
+.btn-link {
+  border: 0 !important;
 }
 
 /* ------- Navigation ------- */
@@ -224,12 +230,17 @@ th.hours-col-loc {
   margin-right: 4px !important;
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
-  color: var(--red) !important;
-  background-color: var(--bg-gray) !important;
+  color: var(--white) !important;
+  background-color: var(--red) !important;
+  border-color: var(--red) !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
   background-color: #fff !important;
   color: var(--darkest-gray) !important;
+}
+.s-lib-jqtabs ul.nav-tabs li:not(.active) a:hover {
+  background-color: var(--bg-gray) !important;
+  color: var(--red) !important;
 }
 .s-lib-jqtabs .tab-content {
   padding: 1rem 1.25rem !important;
@@ -255,10 +266,14 @@ th.hours-col-loc {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.s-lc-w-today .s-lc-w-head-pre {
-  width: 100% !important;
 }*/
+.s-lc-w-today .s-lc-w-head-pre {
+  display: block;
+  clear: both;
+  color: var(--dark-gray);
+  font-size: var(--fs-md);
+  padding: 10px 0px;
+}
 
 /* -------------- Media Queries -------------- */
 
