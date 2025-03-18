@@ -228,8 +228,12 @@ th.hours-col-loc {
   border-color: #86b7fe;
 }
 .s-lib-jqtabs ul.nav-tabs li.active a {
-  color: var(--red) !important;
-  background-color: var(--bg-gray) !important;
+  color: #fff !important;
+  background-color: var(--red) !important;
+}
+.s-lib-jqtabs ul.nav-tabs li:not(.active) a {
+  background-color: #fff !important;
+  color: var(--darkest-gray) !important;
 }
 .s-lib-jqtabs .tab-content {
   padding: 1rem 1.25rem !important;
@@ -238,8 +242,8 @@ th.hours-col-loc {
 
 /* ------- Accordions ------- */
 .accordion-button:not(.collapsed) {
-  color: var(--red) !important;
-  background-color: var(--bg-gray) !important;
+  color: #fff !important;
+  background-color: var(--red) !important;
 }
 
 /* ------- OneSearch ------- */
