@@ -291,6 +291,15 @@ th.hours-col-loc {
 .s-lc-w-today .s-lc-w-time {
   font-weight: normal;
 }
+.s-la-content-faqlist ul {
+  list-style: disc;
+}
+.s-la-content-faqlist li.s-la-faq-listing {
+  margin-bottom: 10px;
+}
+.s-la-content-faqlist .s-la-faq-listing-meta {
+  display: none;
+}
 
 /* -------------- Media Queries -------------- */
 
