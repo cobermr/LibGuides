@@ -353,3 +353,10 @@ th.hours-col-loc {
 @media (min-width: 1400px) {
   
 }
+
+/* Large devices AND SMALLER (desktops, 992px and down)*/
+@media (max-width: 991.98px) {
+  .navbar-collapse.collapse#navbar-content {
+    display: initial;
+  }
+}
