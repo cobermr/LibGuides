@@ -292,40 +292,47 @@ th.hours-col-loc {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    /* ------- Sidebar Boxes ------- */
-    #s-lg-col-0 .s-lib-box {
-      padding: 10px 20px;
-      font-family: var(--font);
-      font-size:  var(--fs-xs);
-      border-radius: 0.75rem;
-      border: 1px solid var(--gray-border);
-      box-shadow: none;
-      }
-      #s-lg-col-0 .s-lib-box h2 {
-        font-size: var(--fs-md);
-      }
-      #s-lg-col-0 .s-lib-box .s-lib-box-content {
-        padding: 5px 0px;
-      }  
 
-      /* ------- Sidebar Tabs ------- */
-      #s-lg-col-0  .s-lib-jqtabs .nav-tabs {
-        margin-bottom: 20px !important;
-      }
-      #s-lg-col-0  .s-lib-jqtabs .nav-tabs li a, #s-lg-col-0  .s-lib-jqtabs .nav-tabs li a:hover {
-        border-radius: 5px;
-        padding: 7px 10px;
-        font-size: var(--fs-xs);
-      }
-      #s-lg-col-0 .s-lib-jqtabs .tab-content {
-        border: 0 !important;
-        padding: 0px !important;
-      }
-}
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   
+      /* ------- Sidebar Boxes ------- */
+      #s-lg-col-0 .s-lib-box {
+        padding: 10px 20px;
+        font-family: var(--font);
+        font-size:  var(--fs-xs);
+        border-radius: 0.75rem;
+        border: 1px solid var(--gray-border);
+        box-shadow: none;
+        }
+        #s-lg-col-0 .s-lib-box h2 {
+          font-size: var(--fs-md);
+        }
+        #s-lg-col-0 .s-lib-box .s-lib-box-content {
+          padding: 5px 0px;
+        }  
+  
+        /* ------- Sidebar Tabs ------- */
+        #s-lg-col-0  .s-lib-jqtabs .nav-tabs {
+          margin-bottom: 20px !important;
+        }
+        #s-lg-col-0  .s-lib-jqtabs .nav-tabs li a, #s-lg-col-0  .s-lib-jqtabs .nav-tabs li a:hover {
+          border-radius: 5px;
+          padding: 7px 10px;
+          font-size: var(--fs-xs);
+        }
+        #s-lg-col-0 .s-lib-jqtabs .tab-content {
+          border: 0 !important;
+          padding: 0px !important;
+        }
+  
+        /* ------- Sidebar Accordions ------- */
+        #s-lg-col-0 .accordion .accordion-button {
+          font-size: var(--fs-xs);
+          padding: 10px 20px;
+        }
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
