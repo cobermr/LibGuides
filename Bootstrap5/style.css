@@ -236,14 +236,14 @@ th.hours-col-loc {
 .s-lib-jqtabs ul.nav-tabs li.active a {
   color: var(--white) !important;
   background-color: var(--dark-gray) !important;
-  border-color: 0 !important;
+  border-color: var(--dark-gray) !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
-  background-color: #000 !important;
-  color: var(--light-gray) !important;
+  background-color: var(--bg-gray) !important;
+  color: #000 !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a:hover {
-  background-color: #bbbbbb !important;
+  background-color: #d9d9d9 !important;
 }
 .s-lib-jqtabs .tab-content {
   padding: 1rem 1.25rem !important;
