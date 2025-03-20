@@ -84,7 +84,7 @@ function checkSize(){
         var collapseId = 'collapse-' + panelId;
 
         var $accordionItem = $('<div>', { 'class': 'accordion-item' });
-        var $accordionHeader = $('<h2>', { 'class': 'accordion-header', 'id': headingId });
+        var $accordionHeader = $('<h3>', { 'class': 'accordion-header', 'id': headingId });
         var $accordionButton = $('<button>', {
           'class': 'accordion-button' + (index === 0 ? '' : ' collapsed'),
           'type': 'button',
@@ -268,7 +268,7 @@ function checkSize(){
         var collapseId = 'responsive-collapse-' + panelId;
         
         var $accordionItem = $('<div>', { 'class': 'accordion-item' });
-        var $accordionHeader = $('<h2>', { 'class': 'accordion-header', 'id': headingId });
+        var $accordionHeader = $('<h3>', { 'class': 'accordion-header', 'id': headingId });
         var $accordionButton = $('<button>', {
           'class': 'accordion-button' + (index === 0 ? '' : ' collapsed'),
           'type': 'button',
