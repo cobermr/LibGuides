@@ -66,6 +66,9 @@ h1, h2, h3, h4, h5 {
   font-weight: 700 !important;
   margin-top: 10px;
 }
+h4, h5 {
+  margin-top: 1.5rem !important;
+}
 .s-lib-box .s-lib-box-title {
   background-color: transparent;
   font-size: var(--fs-xl);
