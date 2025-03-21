@@ -99,6 +99,7 @@ var ve;function ge(e){return null!==e&&"object"==typeof e&&"constructor"in e&&e.
     font-size: var(--description-font-size);
     font-weight: var(--description-font-weight);
     color: var(--description-font-color);
+    display: none;
   }
   
    img, .image-place-holder {
