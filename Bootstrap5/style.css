@@ -274,6 +274,33 @@ th.hours-col-loc {
   white-space: nowrap;
 }
 
+/* ------- Primo Showcase ------- */
+search-carousel {
+  --width-param: 95%;
+}
+pnx-card {
+  --title-font-color: var(--red);
+  --title-font-weight: 600; 
+  --title-font-size: 14px;
+  --description-font-size: 0px;
+}
+.gallery-container swiper-container {
+  max-height: 380px;
+}
+.gallery-container .swiper-button-prev:hover, 
+.gallery-container .swiper-button-next:hover, 
+.gallery-container .swiper-button-prev:focus, 
+.gallery-container .swiper-button-next:focus {
+  background-color: transparent;
+}
+.gallery-container .swiper-button-prev:hover:after, 
+.gallery-container .swiper-button-next:hover:after,
+.gallery-container .swiper-button-prev:focus:after, 
+.gallery-container .swiper-button-next:focus:after {
+  color: var(--red); 
+  transition: var(--anim-fade);
+}
+
 /* ------- Miscellaneous ------- */
 .lci_chat_load {
   border: 0 !important;
