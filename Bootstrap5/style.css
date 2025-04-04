@@ -304,10 +304,10 @@ pnx-card {
 }
 .skip-link {
   position: absolute;
-  visibility: hidden;
+  opacity: 0;
 }
 .skip-link:focus {
-  visibility: visible;
+  opacity: 1;
 }
 
 /* ------- Miscellaneous ------- */
