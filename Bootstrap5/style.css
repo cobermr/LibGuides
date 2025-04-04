@@ -294,11 +294,20 @@ pnx-card {
   background-color: transparent;
 }
 .gallery-container .swiper-button-prev:hover:after, 
-.gallery-container .swiper-button-next:hover:after,
-.gallery-container .swiper-button-prev:focus:after, 
-.gallery-container .swiper-button-next:focus:after {
+.gallery-container .swiper-button-next:hover:after {
   color: var(--red); 
   transition: var(--anim-fade);
+}
+.gallery-container .swiper-button-prev:focus:after, 
+.gallery-container .swiper-button-next:focus:after {
+  color: var(--black);
+}
+.skip-link {
+  position: absolute;
+  visibility: hidden;
+}
+.skip-link:focus {
+  visibility: visible;
 }
 
 /* ------- Miscellaneous ------- */
