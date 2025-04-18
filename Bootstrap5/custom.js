@@ -13,6 +13,15 @@ function checkSize(){
       $('#s-lg-col-0').detach().appendTo('#s-lg-guide-tabs > .s-lg-row');
   }
 }
+
+  // Hide elements with class 'admin-only'
+
+  if (!window.location.href.includes("admin_c")) {
+    const adminElements = document.querySelectorAll(".admin-only");
+    adminElements.forEach(element => {
+      element.style.display = "none";
+    });
+  }
   
   // Accordions
 
