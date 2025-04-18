@@ -276,7 +276,7 @@ th.hours-col-loc {
 
 /* ------- Primo Showcase ------- */
 search-carousel {
-  --width-param: 95%;
+  --width-param: 93%;
 }
 pnx-card {
   --title-font-color: var(--red);
