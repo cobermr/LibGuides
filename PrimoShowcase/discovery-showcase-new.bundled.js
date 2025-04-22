@@ -90,7 +90,7 @@ var ve;function ge(e){return null!==e&&"object"==typeof e&&"constructor"in e&&e.
     color: black;
     margin-top: .5em;
   }
-  .record-details h3 {
+  .record-details p {
     color: var(--title-font-color);
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
@@ -106,6 +106,11 @@ var ve;function ge(e){return null!==e&&"object"==typeof e&&"constructor"in e&&e.
      height: var(--image-height);
      display: block;
      object-fit: contain;
+  }
+  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    background-color: #fff;
+    border: 1px solid #000;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .5);
   }
 `;var Nt=function(e,t,i,s){for(var n,r=arguments.length,o=r<3?t:null===s?s=Object.getOwnPropertyDescriptor(t,i):s,a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};let Ut=class extends K{render(){var e,t,i,s,n,r,o,a,l,c;this.almaDThumbnailBaseURL=this.getAlmaDThumbnailBaseUrl();const d=this.getThumbnailLinks(),p=j`<div style="background-color: ${this.getRandomColor()}" 
                                           class="image-place-holder"></div>`,u=d.then((e=>(console.log(`getImageUrl returned ${e}`),j`<img src=${e} alt="Book cover">`))).catch((()=>p));return j`
