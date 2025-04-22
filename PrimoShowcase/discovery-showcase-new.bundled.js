@@ -112,7 +112,7 @@ var ve;function ge(e){return null!==e&&"object"==typeof e&&"constructor"in e&&e.
             <a  href="${this.getDeeplink()}" target="_blank" aria-label="">
                 ${ue(u,p)}
                 <div class="record-details">
-                    <h3>${null!==(n=null===(s=null===(i=null===(t=null===(e=null==this?void 0:this.doc)||void 0===e?void 0:e.pnx)||void 0===t?void 0:t.display)||void 0===i?void 0:i.title)||void 0===s?void 0:s[0])&&void 0!==n?n:""}</h3>
+                    <p>${null!==(n=null===(s=null===(i=null===(t=null===(e=null==this?void 0:this.doc)||void 0===e?void 0:e.pnx)||void 0===t?void 0:t.display)||void 0===i?void 0:i.title)||void 0===s?void 0:s[0])&&void 0!==n?n:""}</p>
                 </div>
             </a>
             
