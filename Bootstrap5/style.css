@@ -143,6 +143,7 @@ a.text-muted:hover {
 .btn-secondary {
   background-color: var(--light-gray) !important;
   border-color: var(--light-gray) !important;
+  color: #000 !important;
 }
 li:not(.active) .btn-secondary:hover {
   background-color: var(--med-light-gray) !important;
@@ -151,6 +152,7 @@ li:not(.active) .btn-secondary:hover {
 li.active .btn-secondary {
   background-color: var(--dark-gray) !important;
   border-color: var(--dark-gray) !important;
+  color: #fff !important;
 }
 .btn-link {
   border: 0 !important;
