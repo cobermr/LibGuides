@@ -296,6 +296,9 @@ th.hours-col-loc {
 
 /* ------- OneSearch ------- */
 
+.oneSearchForm {
+  background-color: #fff;
+}
 .oneSearchForm button#go {
   white-space: nowrap;
 }
