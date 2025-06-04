@@ -240,7 +240,6 @@ th.hours-col-loc {
 
 /* ------- Headers ------- */
 #s-lg-guide-header {
-  width: 100%;
   background: url('https://libapps.s3.amazonaws.com/accounts/352381/images/library-banner-new.png');
   background-position-x: 0%;
   background-position-y: 0%;
@@ -258,8 +257,15 @@ th.hours-col-loc {
   text-align: left;
 }
 #s-lg-guide-header h1 {
-  color: #fff;
+  color: #fff !important;
   font-size: var(--fs-xxl);
+  font-weight: 400 !important;
+}
+#s-lib-bc  {
+  color: #fff !important;
+}
+#s-lib-bc a {
+  color: #999;
 }
 
 /* ------- Cards ------- */
