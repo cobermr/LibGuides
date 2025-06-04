@@ -273,6 +273,9 @@ th.hours-col-loc {
 .oneSearchForm button#go {
   white-space: nowrap;
 }
+#primoQueryTemp:focus-visible {
+  outline: 2px solid var(--dark-gray);
+}
 
 /* ------- Primo Showcase ------- */
 search-carousel {
