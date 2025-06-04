@@ -154,6 +154,16 @@ li.active .btn-secondary {
   border-color: var(--dark-gray) !important;
   color: #fff !important;
 }
+.btn-secondary:focus {
+  outline: 0px;
+}
+.btn-secondary:focus-visible: {
+  outline: 2px solid #000;
+}
+.btn:active, .btn:focus-visible {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
 .btn-link {
   border: 0 !important;
   font-weight: 600 !important;
