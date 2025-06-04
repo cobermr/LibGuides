@@ -138,6 +138,13 @@ a.text-muted:hover {
 .btn-default:hover, .btn-default:focus, .btn-default:active {
   border-color: var(--red);
 }
+.btn-secondary {
+  background-color: var(--light-gray) !important;
+  border-color: var(--light-gray) !important;
+}
+.active .btn-secondary {
+  background-color: var(--dark-gray) !important;
+}
 .btn-link {
   border: 0 !important;
   font-weight: 600 !important;
