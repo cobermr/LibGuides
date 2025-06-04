@@ -238,13 +238,9 @@ th.hours-col-loc {
   background-color: var(--darkest-gray) !important;
 }
 
-/* ------- Headers ------- */
+/* ------- Page Header ------- */
 #s-lg-guide-header {
   background: url('https://libapps.s3.amazonaws.com/accounts/352381/images/library-banner-new.png');
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-repeat: repeat;
-  background-size: auto;
   background-size: cover;
   background-position: center 50%;
   margin-bottom: 25px;
@@ -261,11 +257,11 @@ th.hours-col-loc {
   font-size: var(--fs-xxl);
   font-weight: 400 !important;
 }
-#s-lib-bc  {
+#s-lib-bc .breadcrumb > li {
   color: #fff !important;
 }
-#s-lib-bc a {
-  color: #999;
+#s-lib-bc .breadcrumb a {
+  color: #999 !important;
 }
 
 /* ------- Cards ------- */
@@ -417,7 +413,21 @@ pnx-card {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-      /* ------- Sidebar Boxes ------- */
+  /* ------- Page Header ------- */
+#s-lg-guide-header {
+
+}
+#s-lg-guide-header #s-lg-guide-header-info {
+  margin: 3rem !important;
+  padding: 3rem !important;
+  width: fit-content;
+  text-align: left;
+}
+#s-lg-guide-header h1 {
+
+}    
+  
+  /* ------- Sidebar Boxes ------- */
       #s-lg-col-0 .s-lib-box {
         padding: 10px 20px;
         font-family: var(--font);
