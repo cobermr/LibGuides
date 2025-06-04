@@ -238,6 +238,30 @@ th.hours-col-loc {
   background-color: var(--darkest-gray) !important;
 }
 
+/* ------- Headers ------- */
+#s-lg-guide-header {
+  width: 100%;
+  background: url('https://libapps.s3.amazonaws.com/accounts/352381/images/library-banner-new.png');
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-size: cover;
+  background-position: center 50%;
+  margin-bottom: 25px;
+  background-repeat: no-repeat;
+}
+#s-lg-guide-header #s-lg-guide-header-info {
+  color: var(--white);
+  background-color: rgba(31,31,31,.9);
+  width: fit-content;
+  text-align: left;
+}
+#s-lg-guide-header h1 {
+  color: #fff;
+  font-size: var(--fs-xxl);
+}
+
 /* ------- Cards ------- */
 .card {
   height: 100% !important;
