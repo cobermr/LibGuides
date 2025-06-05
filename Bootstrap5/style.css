@@ -68,6 +68,9 @@ h1, h2, h3, h4, h5 {
   font-weight: 700 !important;
   margin-top: 10px;
 }
+.h3, h3 {
+  font-size: 1.5rem !important;
+}
 h4, h5 {
   margin-top: 1.5rem !important;
 }
