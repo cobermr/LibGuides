@@ -50,7 +50,7 @@ body {
   padding: 0 !important;
 }
 .container {
-  max-width: 1500px !important;
+  max-width: 1500px;
 }
 p {
   line-height: 1.6em;
@@ -418,6 +418,9 @@ pnx-card {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  #s-lg-guide-main, .s-lg-tabs-side {
+    padding: 0 25px !important;
+  }
 
   /* ------- Page Header ------- */
 #s-lg-guide-header {
@@ -473,7 +476,7 @@ pnx-card {
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  
+ 
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
