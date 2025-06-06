@@ -271,6 +271,26 @@ th.hours-col-loc {
 }
 
 /* ------- Cards ------- */
+
+.img-left {
+  float: left !important;
+  margin-right: .5rem !important;
+  margin-bottom: .5rem !important;
+  border-radius: .375rem !important;
+  width: 100% !important;
+  height: auto;
+}
+
+.img-right {
+  float: right !important;
+  margin-left: .5rem !important;
+  margin-bottom: .5rem !important;
+  border-radius: .375rem !important;
+  width: 100% !important;
+  height: auto;
+}
+
+/* ------- Cards ------- */
 .card {
   height: 100% !important;
   border-radius: 3px !important;
@@ -435,6 +455,10 @@ pnx-card {
 #s-lg-guide-header h1 {
 
 }    
+  /* ------- Images ------- */
+.img-left, .img-right {
+  width: 50% !important;
+}
   
   /* ------- Sidebar Boxes ------- */
       #s-lg-col-0 .s-lib-box {
