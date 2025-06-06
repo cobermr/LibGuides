@@ -276,6 +276,9 @@ th.hours-col-loc {
   border-radius: .375rem !important;
   width: 100% !important;
   height: auto;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+}
 }
 .img-left {
   float: left !important;
