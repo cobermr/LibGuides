@@ -270,24 +270,21 @@ th.hours-col-loc {
   color: #999 !important;
 }
 
-/* ------- Cards ------- */
+/* ------- Images ------- */
 
-.img-left {
-  float: left !important;
-  margin-right: .5rem !important;
-  margin-bottom: .5rem !important;
+.img-left, .img right {
   border-radius: .375rem !important;
   width: 100% !important;
   height: auto;
+}
+.img-left {
+  float: left !important;
 }
 
 .img-right {
   float: right !important;
   margin-left: .5rem !important;
   margin-bottom: .5rem !important;
-  border-radius: .375rem !important;
-  width: 100% !important;
-  height: auto;
 }
 
 /* ------- Cards ------- */
@@ -429,7 +426,7 @@ pnx-card {
   display: none;
 }
 
-/* -------------- Media Queries -------------- */
+/* ---------------------- Media Queries -------------------- */
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -462,6 +459,15 @@ pnx-card {
   /* ------- Images ------- */
 .img-left, .img-right {
   width: 50% !important;
+}
+.img-left {
+  margin-right: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.img-right {
+  margin-left: 1rem !important;
+  margin-bottom: 1rem !important;
 }
   
   /* ------- Sidebar Boxes ------- */
