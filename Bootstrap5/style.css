@@ -345,6 +345,10 @@ th.hours-col-loc {
   background-color: #d9d9d9 !important;
   border-color: #9d9d9d !important;
 }
+/* ------- Modals ------- */
+ .modal.fade {
+  opacity: 1 !important;
+ }
 
 /* ------- OneSearch ------- */
 
