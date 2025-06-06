@@ -272,7 +272,7 @@ th.hours-col-loc {
 
 /* ------- Images ------- */
 
-.img-left, .img right {
+.img-left, .img-right {
   border-radius: .375rem !important;
   width: 100% !important;
   height: auto;
