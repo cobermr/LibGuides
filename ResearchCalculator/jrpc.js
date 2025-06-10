@@ -20,33 +20,15 @@ var StepTitles = [
 //Remember that the array is 0 based. So 0 is actually step 1, 1 is step 2 and so on...
 //in order to use the " character within a body's string, use the \ character before it.
 var StepBody = [];
-StepBody[0] = "<ol><li><h4>Find overview/background information</h4><ul><li>Use encyclopedias to find an overview or identify context." +
-      "Your college has many general and subject focused encyclopedias both online and in our print collection. <a href=\"http://google.com\" target=\"_blank\">Credo Reference</a>," +
-      "<a href=\"http://google.com\">Gale Virtual Reference Library</a>, and " +
-      "<a href=\"http://google.com\"  target=\"_blank\">Oxford Reference Online</a> are collections " +
-      "that allow you to search many reference books and encyclopedias at once.</li>" +
-      "<li>Begin to identify search terms brainstorm words that you feel reflect main concepts of your topic. Try searching with different " +
-      "combinations of these words. Look for related terms that appear in your search results. When searching library research databases pay " +
-      "extra attention to words identified as 'Subjects' or 'Descriptors,' these are specific to a particular topic within the database you are " +
-      "searching.</li>" +
-      "</ul></li>" +
-      "<li><h4>Form a research question to focus your research</h4>" +
-      "<ul><li>Ask a question you want to know the answer to. " +
-      "<a href=\"http://www.libraries.psu.edu/psul/lls/students/research_resources/conceptmap.html\" target=\"_blank\">Create a concept map</a> " +
-      "to focus your research and identify relationships between concepts.</li>" +
-      "<li>Be prepared to modify your research question to achieve a manageable focus. " +
-      "<a href=\"http://libguides.libraries.claremont.edu/content.php?pid=192635&sid=1615318\" target=\"_blank\">Research Strategies and Tips: " +
-      "Narrow or Broaden Your Topic</a></li>" +
-      "<li>Consult with an expert: talk to your professor or <a href=\"http://google.com\" target=\"_blank\">" +
-      "librarian for assistance</a> in developing an appropriate research question for your project.</li>" +
-      "<li>Put your thesis statement in the form of a question. " +
-      "<a href=\"http://google.com\" target=\"_blank\">Formulating a Good Thesis " +
-      "Statement</a>.</li>" +
-      "</ul></li>" +
-      "</ol>" +
-      "<p>Your topic will reflect both the requirements of the assignment and your personal interest. Initially, research the topic through " +
-      "overviews and class readings and discussions. This will help you formulate a draft research question that will be the focus of your project." +
-      "Your research question may change as you conduct more in-depth research.</p>";
+StepBody[0] = "<ul><li>Read through and understand your assignment.</li>" +
+      "<li>Email your instructor or visit their office hours if you have questions.</li>" +
+      "<li>Learn about Choosing and refining research topics</li>" +
+      "<li>Conduct preliminary investigation into your topic. Aim for an overview of its vocabulary, key concepts, and important issues." +
+      "<ul><li>You can use Google or other web searches</li>" +
+      "<li>Try searching encyclopedias</li>" +
+      "<li>Get background on current topics using library tools like Opposing Viewpoints or Issues & Controversies</li>" +
+      "<li>Write down important terms and concepts related to your topic to use as keywords or search terms when you start searching for sources.</li>" +
+      "</ul></li></ul>";
 
 StepBody[1] = "<ol><li><h4>Understand the assignment. What are you being asked to do?</h4></li>" +
       "<li><h4>Do you need a better understanding of background or other contextual information?</h4>" +
@@ -203,7 +185,7 @@ function saveData(){
     
     //show the steps! (show the step divs)
     if(daysBetween > 0) {
-      document.getElementById("daysBetweenStatement").innerHTML= "Starting on: " + moment(startDateMoment).format("MMMM Do YYYY") + "<br/>Ending on: " + moment(endDateMoment).format("MMMM Do YYYY") + "<br/><b>According to the dates you have entered, you have " + daysBetween + " days to finish.</b>";
+      document.getElementById("daysBetweenStatement").innerHTML= "<p><strong>Notes:</strong></p><ul><li>You have <strong>" + daysBetween + "</strong> days to complete your project.</li><li>The research and writing process is not always linear. Keep in mind that you may need to go forward or backward one or more steps at any point in the process.</li></ul>";
        
         var workingTime = startTime;
         for (i = 1; i <= StepTimes.length; i++) {
