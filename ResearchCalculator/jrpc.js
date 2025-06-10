@@ -3,18 +3,18 @@
 
 //Step Values - The decimal point describes the amount of time each step should take. Make sure that the total of your numbers equal 1 (one)
 //or in other words make sure it equals 100% of the time.
-var StepTimes = [.09,.1,.1,.13,.13,.15,.2,.1];
+var StepTimes = [.08,.07,.2,.25,.05,.2,.1,.05];
 var numSteps = StepTimes.length;
 
 var StepTitles = [
-    "Step 1 - Topics: What am I going to research?",
-    "Step 2 - Topics: Assess Your Research Needs",
-    "Step 3 - Assess The Tools: Where do I find what I need most efficiently?",
-    "Step 4 - Search Efficiently: How do I find sources efficiently and keep track of what I've found?",
-    "Step 5 - Get Materials: Get copies of articles, books, and other materials.",
-    "Step 6 - Organize/Review Sources: How do I organize and evaluate what I find?",
-    "Step 7 - Write Well!",
-    "Step 8 - Final Product/Presentation"
+    "Step 1 - Understand your assignment and select a topic.",
+    "Step 2 - Draft your thesis or research question.",
+    "Step 3 - Find and evaluate evidence and sources.",
+    "Step 4 - Critically read and evaluate sources.",
+    "Step 5 - Outline or describe overall structure.",
+    "Step 6 - Write first draft.",
+    "Step 7 - Revise and rewrite with a focus on content. Conduct additional research as necessary.",
+    "Step 8 - Polish and put assignment in final form."
 ];
 
 //Remember that the array is 0 based. So 0 is actually step 1, 1 is step 2 and so on...
