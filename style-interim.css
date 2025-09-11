@@ -28,7 +28,7 @@ background-color: #fff;
 outline:0px;
 }
 .s-lib-box-content {
-font-family: var(--heading-font);
+font-family: var(--heading-font) !important;
 font-size:16px !important;
 }
 .s-lib-box-content a {
@@ -506,11 +506,6 @@ div.slick-slider {
 text-align:center;
 font-size:12px;
 }
-
-/* Hide Custom Styles Header */
-#s-lg-col-0 > .s-lg-col-boxes > div:nth-of-type(1) h2.s-lib-box-title {visibility:hidden;}
-#s-lg-col-0 > .s-lg-col-boxes > div:nth-of-type(1) h2.s-lib-box-title .pull-right,
-#s-lg-col-0 > .s-lg-col-boxes > div:nth-of-type(1) h2.s-lib-box-title a {visibility:visible;}
 
 /* For small screens */
 @media only screen and (max-width: 987px) {
