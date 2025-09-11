@@ -34,6 +34,7 @@ font-size:16px !important;
 .s-lib-box-content a {
 color:#C7231A;
 font-weight:bold;
+text-decoration: underline;
 }
 .s-lib-box-content a:hover {
 color:#514D52;
