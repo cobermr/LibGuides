@@ -9,9 +9,6 @@
   --darkest-gray: #1f1f1f;
   --dark-gray: #514d52;
   --light-gray: #dddddd;
-  --darkest-red: #6f0700;
-  --dark-red: #880f07;
-  --red: #bf2117;
   --light-blue: #50B4E6;
   --blue: #015B99;
   --dark-blue: #00345F;
@@ -107,6 +104,10 @@ margin-bottom:25px!important;
 }
 .pad-bottom-lg {
 margin-bottom:50px!important;
+}
+/* Navbar */
+.navbar li.dropdown.open a {
+    background-color:var(--dark-blue) !important;
 }
 
 /* Buttons */
