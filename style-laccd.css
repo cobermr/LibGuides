@@ -106,7 +106,7 @@ margin-bottom:25px!important;
 margin-bottom:50px!important;
 }
 /* Navbar */
-.navbar li.dropdown.open a {
+.navbar li.dropdown.open > a {
     background-color:var(--dark-blue) !important;
 }
 
