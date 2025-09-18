@@ -531,6 +531,11 @@ line-height:inherit;
 font-size:14px;
 }
 }
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: #fff !important;
+    }
+  }
 </style>
 
 <script type="text/javascript">
