@@ -17,10 +17,13 @@
 body {
 background-color: #fff;
 }
+#s-lch-widget-26609 {
+  display: none !important;
+}
 .s-lib-box {
-border-radius:0px;
+border-radius:0px !important;
 box-shadow:none;
-border:none;
+border:1px solid #efefef;
 background-color: #fff;
 }
 #s-lg-guide-main:focus,
@@ -30,6 +33,7 @@ outline:0px;
 .s-lib-box-content {
 font-family: var(--heading-font) !important;
 font-size:16px !important;
+padding: 10px 20px !important;
 }
 .s-lib-box-content a {
 color:var(--blue);
@@ -69,12 +73,13 @@ margin-top: 5px;
 font-size: 32px;
 }
 .s-lib-box .s-lib-box-title {
-background-color: transparent;
-color: var(--dark-gray);
+background-color: var(--dark-blue);
+color: #fff;
 font-size:24px;
-padding: 10px 0;
-border-bottom: 1px solid var(--light-gray);
+padding: 7px 10;
+border: 1px solid var(--dark-blue);
 margin-bottom: 10px;
+font-weight: 600;
 }
 
 /* Helpers */
