@@ -76,8 +76,9 @@ font-size: 32px;
 background-color: var(--dark-blue);
 color: #fff;
 font-size:24px;
-padding: 7px 10;
+padding: 7px 10px;
 border: 1px solid var(--dark-blue);
+border-radius: 0px !important;
 margin-bottom: 10px;
 font-weight: 600;
 }
