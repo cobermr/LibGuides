@@ -102,7 +102,7 @@ h4, h5 {
   }
 
   /* ------- Links & Buttons ------- */
-a {
+a:not(.nav-link) {
   color: var(--red) !important;
   font-weight: 600;
   text-decoration: underline;
