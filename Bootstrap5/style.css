@@ -220,9 +220,8 @@ th.hours-col-loc {
 }
 
 /* Guide Menu -- Top Level */
-/*#guide-nav a {
+#guide-nav a {
   text-decoration: none;
-  background-color: var(--darkest-gray) !important;
   color: var(--white) !important;
   font-weight: 500 !important;
   transition: var(--anim-fade);
@@ -238,9 +237,9 @@ th.hours-col-loc {
 }
 #guide-nav .dropdown-toggle::after {
   display: none;
-}*/
+}
 /* Guide Menu -- Dropdown Menus & Submenus */
-/*#guide-nav .s-lg-subtab-ul {
+#guide-nav .s-lg-subtab-ul {
   background-color: var(--darker-gray) !important;
 }
 #guide-nav .s-lg-subtab-ul li {
@@ -248,7 +247,7 @@ th.hours-col-loc {
 }
 #guide-nav .s-lg-subtab-ul a:hover {
   background-color: var(--darkest-gray) !important;
-}*/
+}
 
 /* ------- Page Header ------- */
 #s-lg-guide-header {
