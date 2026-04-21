@@ -255,8 +255,9 @@ th.hours-col-loc {
   background: url('https://libapps.s3.amazonaws.com/accounts/352381/images/library-banner-new.png');
   background-size: cover;
   background-position: center 50%;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
   background-repeat: no-repeat;
+  background-color: #efefef;
 }
 #s-lg-guide-header #s-lg-guide-header-info {
   color: var(--white);
@@ -339,6 +340,12 @@ th.hours-col-loc {
 }
 
 /* ------- Accordions ------- */
+h3.accordion-header {
+  margin-top:0 !important;
+}
+.accordion-button {
+  font-weight: 600 !important;
+}
 .accordion-button:not(.collapsed) {
   color: var(--white) !important;
   background-color: var(--medium-gray) !important;
@@ -453,10 +460,9 @@ pnx-card {
 
   /* ------- Page Header ------- */
 #s-lg-guide-header {
-
+  padding: 3rem !important;
 }
 #s-lg-guide-header #s-lg-guide-header-info {
-  margin: 3rem !important;
   padding: 3rem !important;
   width: fit-content;
   text-align: left;
