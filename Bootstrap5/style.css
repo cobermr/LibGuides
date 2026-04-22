@@ -209,9 +209,13 @@ th.hours-col-loc {
 }
 .navbar-dark .dropdown-menu {
   width: 100%;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
 }
 .navbar-dark .dropdown-menu .list-group .list-group-item {
   background-color: transparent;
+  border: 0 !important;
 }
 .dropdown-menu-dark .dropdown-header {
   color: #cbcbcb !important;
