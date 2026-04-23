@@ -141,18 +141,19 @@ a.text-muted:hover {
 .btn-arrow:hover::after {
   transform: translateX(50%);
 }
-.btn-primary {
+.btn-red {
   background-color: var(--red) !important;
   color: var(--white) !important;
   border-color: var(--red) !important;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-red.btn-outline {
+  background-color: var(--white) !important;
+  color: var(--red) !important;
+}
+.btn-red:hover, .btn-red:focus, .btn-red:active {
   background-color: var(--dark-red) !important;
   color: var(--white) !important;
   border-color: var(--dark-red) !important;
-}
-.btn-default:hover, .btn-default:focus, .btn-default:active {
-  border-color: var(--red);
 }
 .btn-secondary {
   background-color: var(--light-gray) !important;
