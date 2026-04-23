@@ -334,10 +334,11 @@ th.hours-col-loc {
   border: 1px solid var(--light-gray) !important;
   margin-right: 4px !important;
 }
-.s-lib-jqtabs ul.nav-tabs li.active a {
-  color: var(--white) !important;
-  background-color: var(--medium-gray) !important;
+.s-lib-jqtabs ul.nav-tabs a.nav-link.active {
+  color: #000 !important;
+  background-color: #fff !important;
   border-color: var(--medium-gray) !important;
+  border-bottom: #fff !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
   background-color: var(--bg-gray) !important;
@@ -462,6 +463,9 @@ h3.s-lc-ea-h3 {
 }
 span.s-lc-w-att {
   display: none;
+}
+tr.s-lc-w-dtr {
+  border-top: 0px !important;
 }
 
 /* ---------------------- Media Queries -------------------- */
