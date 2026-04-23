@@ -124,9 +124,10 @@ a.text-muted:hover {
   border: 2px solid !important;
   background-image: none !important;
   font-weight: 500 !important;
+  font-size: 16px;
+  text-decoration: none;
   text-shadow: none !important;
   white-space: break-spaces;
-  line-height: 24px;
 }
 .btn-arrow::after {
   content: "\f105";
