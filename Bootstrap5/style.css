@@ -102,7 +102,7 @@ h4, h5 {
   }
 
   /* ------- Links & Buttons ------- */
-a:not(.nav-link):not(.btn) {
+a:not(.nav-link):not(.btn):not(.stretched-link) {
   color: var(--red) !important;
   font-weight: 600;
   text-decoration: underline;
@@ -125,7 +125,7 @@ a.text-muted:hover {
   background-image: none !important;
   font-weight: 500 !important;
   font-size: 16px;
-  text-decoration: none;
+  text-decoration: none !important;
   text-shadow: none !important;
   white-space: break-spaces;
 }
@@ -143,18 +143,23 @@ a.text-muted:hover {
 }
 .btn-red {
   background-color: var(--red) !important;
-  color: var(--white) !important;
+  color: #fff !important;
   border-color: var(--red) !important;
 }
 .btn-red.btn-outline {
-  background-color: var(--white) !important;
+  background-color: #fff !important;
   color: var(--red) !important;
 }
-.btn-red:hover, .btn-red:focus, .btn-red:active {
+.btn-red:not(.btn-outline):hover, .btn-red:not(.btn-outline):focus, .btn-red:not(.btn-outline):active {
   background-color: var(--dark-red) !important;
-  color: var(--white) !important;
+  color: #fff !important;
   border-color: var(--dark-red) !important;
 }
+.btn-red.btn-outline:hover, .btn-red.btn-outline:focus, .btn-red.btn-outline:active {
+ background-color: var(--white) !important;
+ color: #000 !important;
+ border-color: #000 !important;
+} 
 .btn-secondary {
   background-color: var(--light-gray) !important;
   border-color: var(--light-gray) !important;
@@ -201,7 +206,7 @@ th.hours-col-loc {
 .navbar-dark {
   border-radius: 0px !important;
 }
-.navbar-dark a {
+.navbar-dark a, .navbar-dark .dropdown-menu a {
   color: var(--white) !important;
   font-weight: 500 !important;
   transition: var(--anim-fade) !important;
