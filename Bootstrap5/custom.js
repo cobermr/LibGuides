@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 function checkSize(){
-  if ($("#mobile-indicator").is(':visible')){
+  if (window.innerWidth < 768) {
       $('#s-lg-col-0').detach().appendTo('#s-lg-guide-main');
   }
   else {
@@ -61,7 +61,7 @@ function checkSize(){
         'id': accordionId
       });
 
-      // Create Expand All / Collapse All buttons aligned to the right
+      // ** Create Expand All / Collapse All buttons aligned to the right
       var $buttonContainer = $('<div>', { 'class': 'mb-2 d-flex justify-content-end' });
 
       var $expandAllButton = $('<button>', {
