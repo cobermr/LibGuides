@@ -232,33 +232,30 @@ th.hours-col-loc {
 }
 
 /* Guide Menu -- Top Level */
+#guide-nav {
+  border-top: 5px solid var(--red);
+}
 #guide-nav a {
   text-decoration: none;
-  color: var(--white) !important;
+  color: #000 !important;
+  background-color: #fff !important;
   font-weight: 500 !important;
   transition: var(--anim-fade);
+  border-bottom: 1px solid #efefef !important;
 }
 #guide-nav > li > a {
   padding: 7px 15px !important;
+  margin-bottom: 4px !important;
 }
-#guide-nav > li > a:hover {
-  background-color: var(--darker-gray) !important;
-}
-#guide-nav li.active > a {
+/*#guide-nav > li > a:hover, #guide-nav .s-lg-subtab-ul a:hover, #guide-nav li.active > a {
   background-color: var(--red) !important;
-}
+}*/
 #guide-nav .dropdown-toggle::after {
   display: none;
 }
 /* Guide Menu -- Dropdown Menus & Submenus */
 #guide-nav .s-lg-subtab-ul {
   margin-top: 0px;
-}
-#guide-nav .s-lg-subtab-ul li:not(.dropdown) {
-  margin-bottom: 4px !important;
-}
-#guide-nav .s-lg-subtab-ul a:hover {
-  background-color: var(--red) !important;
 }
 
 /* ------- Page Header ------- */
@@ -289,7 +286,7 @@ th.hours-col-loc {
   color: #999 !important;
 }
 #s-lib-bc .breadcrumb a:hover {
-  color: #fff !important;
+  color: #ddd !important;
 }
 
 /* ------- Images ------- */
