@@ -241,14 +241,15 @@ th.hours-col-loc {
   transition: var(--anim-fade);
   padding: 7px 15px !important;
 }
-#guide-nav > li:nth-of-type(1) > a {
-  text-transform:uppercase;
-  font-size:14px;
-  letter-spacing: 1px;
+#guide-nav a:hover {
+  color: #fff !important;
 }
 /* Guide Menu -- Dropdown Menus & Submenus */
 #guide-nav .s-lg-subtab-ul {
   margin-top: 0px;
+}
+#s-lg-tabs-container .dropdown-item.active {
+  background-color: transparent !important;
 }
 
 /* ------- Page Header ------- */
