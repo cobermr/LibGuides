@@ -103,7 +103,7 @@ h4, h5 {
 
   /* ------- Links & Buttons ------- */
 a:not(.nav-link):not(.btn):not(.stretched-link) {
-  color: var(--red) !important;
+  color: var(--red);
   font-weight: 600;
   text-decoration: underline;
   transition: var(--anim-fade);
@@ -252,13 +252,13 @@ th.hours-col-loc {
 }
 /* Guide Menu -- Dropdown Menus & Submenus */
 #guide-nav .s-lg-subtab-ul {
-  background-color: var(--darker-gray) !important;
+  margin-top: 0px;
 }
-#guide-nav .s-lg-subtab-ul li {
-  width: 100%;
+#guide-nav .s-lg-subtab-ul li:not(.dropdown) {
+  margin-bottom: 4px !important;
 }
 #guide-nav .s-lg-subtab-ul a:hover {
-  background-color: var(--darkest-gray) !important;
+  background-color: var(--red) !important;
 }
 
 /* ------- Page Header ------- */
@@ -283,9 +283,13 @@ th.hours-col-loc {
 }
 #s-lib-bc .breadcrumb > li, .breadcrumb-item::before {
   color: #fff !important;
+  font-weight: 500 !important;
 }
 #s-lib-bc .breadcrumb a {
   color: #999 !important;
+}
+#s-lib-bc .breadcrumb a:hover {
+  color: #fff !important;
 }
 
 /* ------- Images ------- */
@@ -312,7 +316,7 @@ th.hours-col-loc {
   height: 100% !important;
   border-radius: 3px !important;
 }
-.card.stretched:hover {
+.card:hover {
   background-color: var(--bg-gray);
   transition: var(--anim-fade);
 }
