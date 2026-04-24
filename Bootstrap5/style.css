@@ -235,6 +235,9 @@ th.hours-col-loc {
 #guide-nav {
   border-top: 5px solid var(--red);
 }
+#guide-nav li {
+  margin-bottom: 0 !important;
+}
 #guide-nav a {
   text-decoration: none;
   color: #000 !important;
@@ -242,14 +245,16 @@ th.hours-col-loc {
   font-weight: 500 !important;
   transition: var(--anim-fade);
   border-bottom: 1px solid #efefef !important;
-}
-#guide-nav > li > a {
   padding: 7px 15px !important;
   margin-bottom: 4px !important;
 }
-/*#guide-nav > li > a:hover, #guide-nav .s-lg-subtab-ul a:hover, #guide-nav li.active > a {
-  background-color: var(--red) !important;
-}*/
+#guide-nav > li:nth-of-type(1) > a {
+  text-transform:uppercase;
+  font-size:14px;
+}
+#guide-nav > li > a:hover, #guide-nav .s-lg-subtab-ul a:hover, #guide-nav li.active > a {
+  color: var(--red) !important;
+}
 #guide-nav .dropdown-toggle::after {
   display: none;
 }
