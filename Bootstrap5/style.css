@@ -240,8 +240,7 @@ th.hours-col-loc {
 }
 #guide-nav a {
   text-decoration: none;
-  color: #000 !important;
-  background-color: #fff !important;
+
   font-weight: 500 !important;
   transition: var(--anim-fade);
   border-bottom: 1px solid #efefef !important;
@@ -251,9 +250,10 @@ th.hours-col-loc {
 #guide-nav > li:nth-of-type(1) > a {
   text-transform:uppercase;
   font-size:14px;
+  letter-spacing: 1px;
 }
 #guide-nav > li > a:hover, #guide-nav .s-lg-subtab-ul a:hover, #guide-nav li.active > a {
-  color: var(--red) !important;
+
 }
 #guide-nav .dropdown-toggle::after {
   display: none;
