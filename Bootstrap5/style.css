@@ -232,6 +232,13 @@ th.hours-col-loc {
 }
 
 /* Guide Menu -- Top Level */
+#nav-intro {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #666;
+  font-size: 14px;
+}
 #guide-nav li {
   margin-bottom: 0 !important;
 }
@@ -246,11 +253,16 @@ th.hours-col-loc {
   color: #fff !important;
 }
 /* Guide Menu -- Dropdown Menus & Submenus */
-#guide-nav .s-lg-subtab-ul {
-  margin-top: 0px;
+.s-lg-subtab-ul.dropdown-menu {
+  margin-top: -4px !important;
+  border-radius: 0px;
 }
-#s-lg-tabs-container .dropdown-item.active {
-  background-color: transparent !important;
+.s-lg-subtab-ul.dropdown-menu .dropdown-item a {
+  color: #000 !important;
+}
+.s-lg-subtab-ul.dropdown-menu .dropdown-item a:hover {
+  background-color: var(--red) !important;
+  color: #fff !important;
 }
 
 /* ------- Page Header ------- */
