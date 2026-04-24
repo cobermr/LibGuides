@@ -260,9 +260,12 @@ th.hours-col-loc {
 .s-lg-subtab-ul.dropdown-menu .dropdown-item a {
   color: #000 !important;
 }
-.s-lg-subtab-ul.dropdown-menu .dropdown-item a:hover {
+.s-lg-subtab-ul.dropdown-menu .dropdown-item:hover {
   background-color: var(--red) !important;
   color: #fff !important;
+}
+#s-lg-tabs-container .dropdown-item.active {
+  background-color: transparent !important;
 }
 
 /* ------- Page Header ------- */
