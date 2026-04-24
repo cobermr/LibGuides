@@ -232,31 +232,19 @@ th.hours-col-loc {
 }
 
 /* Guide Menu -- Top Level */
-#guide-nav {
-  border-top: 5px solid var(--red);
-}
 #guide-nav li {
   margin-bottom: 0 !important;
 }
 #guide-nav a {
   text-decoration: none;
-
   font-weight: 500 !important;
   transition: var(--anim-fade);
-  border-bottom: 1px solid #efefef !important;
   padding: 7px 15px !important;
-  margin-bottom: 4px !important;
 }
 #guide-nav > li:nth-of-type(1) > a {
   text-transform:uppercase;
   font-size:14px;
   letter-spacing: 1px;
-}
-#guide-nav > li > a:hover, #guide-nav .s-lg-subtab-ul a:hover, #guide-nav li.active > a {
-
-}
-#guide-nav .dropdown-toggle::after {
-  display: none;
 }
 /* Guide Menu -- Dropdown Menus & Submenus */
 #guide-nav .s-lg-subtab-ul {
