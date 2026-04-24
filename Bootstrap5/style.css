@@ -240,6 +240,7 @@ th.hours-col-loc {
   font-weight: 500 !important;
   transition: var(--anim-fade);
   padding: 7px 15px !important;
+  margin-bottom: 4px !important;
 }
 #guide-nav a:hover {
   color: #fff !important;
