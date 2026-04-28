@@ -348,14 +348,14 @@ th.hours-col-loc {
 .s-lib-jqtabs ul.nav-tabs a.nav-link.active {
   color: #000 !important;
   background-color: #fff !important;
-  border-color: var(--medium-gray) !important;
-  border-bottom: #fff !important;
+  border-color: #ddd;
+  border-bottom: 1px solid #fff !important;
 }
 .s-lib-jqtabs ul.nav-tabs li:not(.active) a {
   background-color: var(--bg-gray) !important;
   color: #000 !important;
 }
-.s-lib-jqtabs ul.nav-tabs li:not(.active) a:hover {
+.s-lib-jqtabs ul.nav-tabs li a:not(.active):hover {
   background-color: #d9d9d9 !important;
   border-color: #9d9d9d !important;
 }
