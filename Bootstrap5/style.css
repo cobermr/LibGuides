@@ -281,7 +281,7 @@ th.hours-col-loc {
 #s-lg-guide-header #s-lg-guide-header-info {
   color: var(--white);
   background-color: rgba(31,31,31,.9);
-  width: fit-content;
+  width: 100%;
   text-align: center;
   padding: 15px;
 }
@@ -300,7 +300,7 @@ th.hours-col-loc {
 #s-lib-bc .breadcrumb a:hover {
   color: #ddd !important;
 }
-#s-lib-bc-customer, #s-lib-bc-site::before {
+#s-lib-bc-page {
   display: none;
 }
 
@@ -486,20 +486,13 @@ tr.s-lc-w-dtr {
 
 /* ---------------------- Media Queries -------------------- */
 
-/* Small devices (landscape phones, 576px and up)*/
+/* -------------- Small devices (landscape phones, 576px and up) -------------- */
 @media (min-width: 576px) {
   
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/* -------------- Medium devices (tablets, 768px and up) -------------- */
 @media (min-width: 768px) {
-
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-  #s-lg-guide-main, .s-lg-tabs-side {
-    padding: 0 25px !important;
-  }
 
   /* ------- Page Header ------- */
 
@@ -508,7 +501,7 @@ tr.s-lc-w-dtr {
   padding: 3rem !important;
 }
 #s-lg-guide-header #s-lg-guide-header-info {
-  color: var(--white);
+  color: #fff;
   background-color: rgba(31,31,31,.9);
   width: fit-content;
   text-align: left;
@@ -519,9 +512,19 @@ tr.s-lc-w-dtr {
   font-size: var(--fs-xxl);
   font-weight: 400 !important;
 }
-#s-lib-bc-customer, #s-lib-bc-site::before {
+#s-lib-bc-page {
   display: block;
 }
+
+/* -------------- Large devices (desktops, 992px and up) -------------- */
+@media (min-width: 992px) {
+  #s-lg-guide-main, .s-lg-tabs-side {
+    padding: 0 25px !important;
+  }
+ul.navbar-nav {
+  width: 100% !important;
+}
+
   /* ------- Images ------- */
 .img-left, .img-right {
   width: 50% !important;
@@ -574,17 +577,17 @@ tr.s-lc-w-dtr {
   }
 }
 
-/* X-Large devices (large desktops, 1200px and up)*/
+/* -------------- X-Large devices (large desktops, 1200px and up) -------------- */
 @media (min-width: 1200px) {
  
 }
 
-/* XX-Large devices (larger desktops, 1400px and up)*/
+/* -------------- XX-Large devices (larger desktops, 1400px and up) -------------- */
 @media (min-width: 1400px) {
   
 }
 
-/* Large devices AND SMALLER (desktops, 992px and down)*/
+/* -------------- Large devices AND SMALLER (desktops, 992px and down) -------------- */
 @media (max-width: 991.98px) {
   .navbar-collapse.collapse#navbar-content:not(.show) {
     display: none !important;
