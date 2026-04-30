@@ -233,18 +233,19 @@ th.hours-col-loc {
 
 /* Guide Menu -- Top Level */
 #sectionNavHeading {
-  text-transform: uppercase !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px !important;
-  color: #666 !important;
-  font-size: 14px !important;
-  text-decoration: none !important;
+
 }
 #sectionNavHeading button {
   background-color: #fff !important;
   border-radius: 0.75rem;
   border: 1px solid var(--gray-border);
   padding: 10px 20px;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  color: #666 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
 }
 #guide-nav li {
   margin-bottom: 0 !important;
