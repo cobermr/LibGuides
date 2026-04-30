@@ -232,9 +232,6 @@ th.hours-col-loc {
 }
 
 /* Guide Menu -- Top Level */
-#sectionNavHeading {
-
-}
 #sectionNavHeading button {
   background-color: #fff !important;
   border-radius: 0.75rem;
@@ -246,6 +243,10 @@ th.hours-col-loc {
   color: #666 !important;
   font-size: 14px !important;
   text-decoration: none !important;
+  box-shadow: none !important;
+}
+#sectionNavHeading button:after {
+  color: #666 !important;
 }
 #guide-nav li {
   margin-bottom: 0 !important;
