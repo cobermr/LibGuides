@@ -1,4 +1,4 @@
-  //Move side boxes below main content on mobile devices
+//Move side boxes below main content on mobile devices
 
 $(document).ready(function() {
   checkSize();
@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 function checkSize(){
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 992) {
       $('#s-lg-col-0').detach().appendTo('#s-lg-guide-main');
   }
   else {
