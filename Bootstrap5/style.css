@@ -537,9 +537,6 @@ tr.s-lc-w-dtr {
 ul.navbar-nav {
   width: 100% !important;
 }
-#sectionNavHeading .accordion-button {
-  border: 0px !important;
-}
 
   /* ------- Images ------- */
 .img-left, .img-right {
@@ -595,7 +592,9 @@ ul.navbar-nav {
 
 /* -------------- X-Large devices (large desktops, 1200px and up) -------------- */
 @media (min-width: 1200px) {
- 
+ #sectionNavHeading .accordion-button {
+  border: 0px !important;
+}
 }
 
 /* -------------- XX-Large devices (larger desktops, 1400px and up) -------------- */

@@ -9,12 +9,12 @@ function checkSize(){
   if (window.innerWidth < 1200) {
       $('#s-lg-col-0').detach().appendTo('#s-lg-guide-main');
       $('#sectionNavMenu').removeClass('show');
-      $('#sectionNavMenu .accordion-button').addClass('collapsed');
+      $('#sectionNavHeading .accordion-button').addClass('collapsed');
   }
   else {
       $('#s-lg-col-0').detach().appendTo('#s-lg-guide-tabs > .s-lg-row');
       $('#sectionNavMenu').addClass('show');
-      $('#sectionNavMenu .accordion-button').removeClass('collapsed');
+      $('#sectionNavHeading .accordion-button').removeClass('collapsed');
   }
 }
 
