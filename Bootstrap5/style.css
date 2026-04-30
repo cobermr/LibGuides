@@ -245,10 +245,11 @@ th.hours-col-loc {
   text-decoration: none !important;
   box-shadow: none !important;
 }
-#sectionNavHeading .accordion-button:not(.collapsed)
+#sectionNavHeading .accordion-button:not(.collapsed) {
+  color: #666 !important;
+}
 #guide-nav li {
   margin-bottom: 0 !important;
-  color: #666 !important;
 }
 #guide-nav a {
   text-decoration: none;
@@ -453,6 +454,9 @@ pnx-card {
 .lci_chat_load {
   border: 0 !important;
 }
+.s-lib-scroll-top {
+  z-index: 1000;
+}
 /*.s-lc-w-today th.s-lc-w-head {
   display: flex;
   flex-wrap: wrap;
@@ -532,6 +536,9 @@ tr.s-lc-w-dtr {
   }
 ul.navbar-nav {
   width: 100% !important;
+}
+#sectionNavHeading .accordion-button {
+  border: 0px !important;
 }
 
   /* ------- Images ------- */
