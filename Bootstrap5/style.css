@@ -375,6 +375,7 @@ h3.accordion-header {
 }
 .accordion-button {
   font-weight: 600 !important;
+  font-size:1.25rem !important;
 }
 .accordion-button:not(.collapsed) {
   color: var(--white) !important;
