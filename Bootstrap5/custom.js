@@ -8,11 +8,11 @@ $(document).ready(function() {
 function checkSize(){
   if (window.innerWidth < 1200) {
       $('#s-lg-col-0').detach().appendTo('#s-lg-guide-main');
-      //$('#sectionNavMenu').removeClass('show')
+      $('#sectionNavMenu').removeClass('show')
   }
   else {
       $('#s-lg-col-0').detach().appendTo('#s-lg-guide-tabs > .s-lg-row');
-      //$('#sectionNavMenu').addClass('show');
+      $('#sectionNavMenu').addClass('show');
   }
 }
 
