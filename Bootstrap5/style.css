@@ -231,8 +231,8 @@ th.hours-col-loc {
   font-weight: 600;
 }
 
-/* Guide Menu -- Top Level */
-#sectionNavHeading button {
+/* Guide Menu */
+#sectionNavHeading .accordion-button {
   background-color: #fff !important;
   border-radius: 0.75rem;
   border: 1px solid var(--gray-border);
@@ -245,11 +245,10 @@ th.hours-col-loc {
   text-decoration: none !important;
   box-shadow: none !important;
 }
-#sectionNavHeading button:after {
-  color: #666 !important;
-}
+#sectionNavHeading .accordion-button:not(.collapsed)
 #guide-nav li {
   margin-bottom: 0 !important;
+  color: #666 !important;
 }
 #guide-nav a {
   text-decoration: none;
