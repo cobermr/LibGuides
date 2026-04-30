@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 function checkSize(){
-  if (window.innerWidth < 992) {
+  if (window.innerWidth < 1200) {
       $('#s-lg-col-0').detach().appendTo('#s-lg-guide-main');
   }
   else {
