@@ -245,8 +245,9 @@ th.hours-col-loc {
   text-decoration: none !important;
   box-shadow: none !important;
 }
-#sectionNavHeading .accordion-button:not(.collapsed) {
+#sectionNavHeading .accordion-button:not(.collapsed):after {
   color: #666 !important;
+  background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e;)
 }
 #guide-nav li {
   margin-bottom: 0 !important;
