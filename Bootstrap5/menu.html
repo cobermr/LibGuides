@@ -1,16 +1,3 @@
-<!-- TOP NAVBAR -->
-<nav class="navbar my-0" id="navbar-top">
-  <div class="container-fluid justify-content-start">
-    <a class="navbar-brand me-auto py-0" href="https://library.lapc.edu">
-      <img src="https://libapps.s3.amazonaws.com/accounts/352381/images/logo-library-color.png" alt="Pierce Library" height="50">
-    </a>
-        <div id="todays-hours" class="text-end small">
-            <strong>Today's Hours:</strong> <div id="api_hours_today_iid3367_lid3494"></div>
-            <a href="https://piercecollege.libcal.com/hours/">View All Hours</a>
-        </div>
-        <script src="https://api3.libcal.com/api_hours_today.php?iid=3367&lid=3494&format=js&context=object"></script>
-  </div>
-</nav>
 <!-- BOTTOM NAVBAR -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow mb-0" id="navbar-bottom">
         <div class="container-fluid">
@@ -24,7 +11,7 @@
                     </li>
                     <li class="nav-item dropdown dropdown-mega position-static">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Find Sources</a>
-                        <div class="dropdown-menu dropdown-menu-dark shadow">
+                        <div class="dropdown-menu dropdown-menu-dark shadow" id="dropdown-find">
                             <div class="mega-content px-md-4">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -58,7 +45,7 @@
                     </li>
                     <li class="nav-item dropdown dropdown-mega position-static">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Spaces & Technology</a>
-                        <div class="dropdown-menu dropdown-menu-dark shadow">
+                        <div class="dropdown-menu dropdown-menu-dark shadow" id="dropdown-spaces">
                             <div class="mega-content px-md-4">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -86,7 +73,7 @@
                     </li>
                     <li class="nav-item dropdown dropdown-mega position-static">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Research Help</a>
-                        <div class="dropdown-menu dropdown-menu-dark shadow">
+                        <div class="dropdown-menu dropdown-menu-dark shadow" id="dropdown-help">
                             <div class="mega-content px-md-4">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -123,7 +110,7 @@
                     </li>
                     <li class="nav-item dropdown dropdown-mega position-static">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">For Faculty</a>
-                        <div class="dropdown-menu dropdown-menu-dark shadow">
+                        <div class="dropdown-menu dropdown-menu-dark shadow" id="dropdown-faculty">
                             <div class="mega-content px-md-4">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -150,7 +137,7 @@
                     </li>
                     <li class="nav-item dropdown dropdown-mega position-static">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">About the Library</a>
-                        <div class="dropdown-menu dropdown-menu-dark shadow">
+                        <div class="dropdown-menu dropdown-menu-dark shadow" id="dropdown-about">
                             <div class="mega-content px-md-4">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -186,7 +173,7 @@
                     </li>
                     <li class="nav-item ms-lg-auto dropdown dropdown-mega position-static">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="fa fa-search d-none d-lg-inline" aria-hidden="true"></i> <span class="d-lg-none">Search</span></a>
-                        <div class="dropdown-menu dropdown-menu-dark shadow">
+                        <div class="dropdown-menu dropdown-menu-dark shadow" id="dropdown-search">
                             <div class="mega-content px-md-4">
                                 <div class="container-fluid">
                                     <div class="row">
