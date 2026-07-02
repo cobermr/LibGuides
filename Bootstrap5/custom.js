@@ -212,7 +212,7 @@ function checkSize(){
 
 })(jQuery);
 
-//TURN TABS INTO ACCORDIONS ON MOBILE
+/*//TURN TABS INTO ACCORDIONS ON MOBILE
 
 (function($) {
   // Skip if we're on an admin page
@@ -389,7 +389,7 @@ function checkSize(){
       childList: true,
       subtree: true
     });
-  }
+  } */
 
 //ADD INDICATOR TO EXTERNAL LINKS
 function processLinks(context) {
