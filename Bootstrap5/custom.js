@@ -135,19 +135,25 @@ $(function () {
   document.addEventListener('DOMContentLoaded', function () {
   const guideEl = document.querySelector('#s-lib-bc-guide');
   const pageEl  = document.querySelector('#s-lib-bc-page');
+  const firstNavItem = document.querySelector('#sectionNavMenu .nav-item');
 
-  if (!guideEl || !pageEl) return;
+  if (!guideEl) return;
 
   const guideName = guideEl.textContent.trim();
-  const pageName  = pageEl.textContent.trim();
+  const pageName  = pageEl ? pageEl.textContent.trim() : '';
 
+  // Always hide guide if current page matches guide name
   if (guideName && pageName && guideName === pageName) {
-    const firstNavItem = document.querySelector('#sectionNavMenu .nav-item');
-    if (firstNavItem) {
+    guideEl.classList.add('visually-hidden');
+  }
+
+  // Check first nav item text against guide name
+  if (firstNavItem && guideName) {
+    const navText = firstNavItem.textContent.trim();
+
+    if (navText === guideName) {
       firstNavItem.classList.add('nav-item-first');
     }
-
-    guideEl.classList.add('visually-hidden');
   }
 });
   
