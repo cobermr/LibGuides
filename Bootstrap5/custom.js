@@ -41,7 +41,6 @@
 })();
 
 //MOVE SIDE BOXES BELOW MAIN CONTENT ON MOBILE
-
 $(document).ready(function() {
   checkSize();
   $(window).resize(checkSize);
@@ -125,16 +124,34 @@ $(function () {
 });
 
 //HIDE ELEMENTS WITH CLASS 'ADMIN-ONLY'
-
   if (!window.location.href.includes("admin_c")) {
     const adminElements = document.querySelectorAll(".admin-only");
     adminElements.forEach(element => {
       element.style.display = "none";
     });
   }
+
+  //ADD 'NAV-ITEM-FIRST' CLASS TO FIRST ITEM IF PAGE NAME SAME AS GUIDE NAME
+  document.addEventListener('DOMContentLoaded', function () {
+  const guideEl = document.querySelector('#s-lib-bc-guide');
+  const pageEl  = document.querySelector('#s-lib-bc-page');
+
+  if (!guideEl || !pageEl) return;
+
+  const guideName = guideEl.textContent.trim();
+  const pageName  = pageEl.textContent.trim();
+
+  if (guideName && pageName && guideName === pageName) {
+    const firstNavItem = document.querySelector('#sectionNavMenu .nav-item');
+    if (firstNavItem) {
+      firstNavItem.classList.add('nav-item-first');
+    }
+
+    guideEl.classList.add('visually-hidden');
+  }
+});
   
   // ACCORDIONS
-
   /**
  * Converts tabs with [Accordion] in title to Bootstrap 5 Accordions
  * Only activates when URL does not contain "admin_c"
