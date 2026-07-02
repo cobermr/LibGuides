@@ -40,11 +40,11 @@
 }
 
 /* ------- Delete After Customizing Styles ------- */
-#sectionNavMenu .nav-item {
+#sectionNavMenu .nav-item a {
   background-color: #efefef !important;
   color: #000 !important;
 }
-#sectionNavMenu .nav-item.active {
+#sectionNavMenu .nav-item.active a {
   background-color: var(--red) !important;
 }
 
