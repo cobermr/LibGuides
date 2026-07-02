@@ -576,14 +576,13 @@ ul.navbar-nav {
   /* ------- Sidebar Boxes ------- */
       #s-lg-col-0 .s-lib-box {
         padding: 10px 20px;
-        font-family: var(--font);
         font-size:  var(--fs-xs);
         border-radius: 0.75rem;
         border: 1px solid var(--gray-border);
         box-shadow: none;
         }
         #s-lg-col-0 .s-lib-box h2 {
-          font-size: var(--fs-md);
+          font-size: var(--fs-md) !important;
         }
         #s-lg-col-0 .s-lib-box .s-lib-box-content {
           padding: 5px 0px;
