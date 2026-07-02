@@ -1,4 +1,4 @@
-//Set header image
+//SET HEADER IMAGE
 (function () {
   function applyHeaderImage() {
     var defaultFallbackImageUrl = "https://libapps.s3.amazonaws.com/accounts/352381/images/library-banner-new.png";
@@ -40,7 +40,7 @@
   }
 })();
 
-//Move side boxes below main content on mobile devices
+//MOVE SIDE BOXES BELOW MAIN CONTENT ON MOBILE
 
 $(document).ready(function() {
   checkSize();
@@ -69,7 +69,7 @@ function checkSize(){
     });
   }
   
-  // Accordions
+  // ACCORDIONS
 
   /**
  * Converts tabs with [Accordion] in title to Bootstrap 5 Accordions
@@ -168,21 +168,8 @@ function checkSize(){
         $accordion.append($accordionItem);
       });
 
-      // Create "Top of Section" link with faster scrolling
-      var $backToTop = $('<div>', { 'class': 'mt-3 d-flex justify-content-end' }).append(
-        $('<a>', {
-          'href': '#' + sectionId,
-          'class': 'small text-muted',
-          'text': 'Top of Section',
-          'click': function(event) {
-            event.preventDefault();
-            $('html, body').animate({ scrollTop: $('#' + sectionId).offset().top }, 300); // Faster scroll (300ms)
-          }
-        })
-      );
-
       // Insert everything into a wrapper div
-      $sectionWrapper.append($buttonContainer, $accordion, $backToTop);
+      $sectionWrapper.append($buttonContainer, $accordion);
       $(this).replaceWith($sectionWrapper);
     });
   }
@@ -225,7 +212,7 @@ function checkSize(){
 
 })(jQuery);
 
-// Turns tabs into accordions on mobile
+//TURN TABS INTO ACCORDIONS ON MOBILE
 
 (function($) {
   // Skip if we're on an admin page
@@ -352,21 +339,8 @@ function checkSize(){
         $accordion.append($accordionItem);
       });
       
-      // Add a "back to top" link
-      var $backToTop = $('<div>', { 'class': 'mt-3 d-flex justify-content-end' }).append(
-        $('<a>', {
-          'href': '#' + tabId,
-          'class': 'small text-muted',
-          'text': 'Top of Section',
-          'click': function(event) {
-            event.preventDefault();
-            $('html, body').animate({ scrollTop: $('#' + tabId).offset().top }, 300);
-          }
-        })
-      );
-      
       // Replace tabs with accordion
-      $tabContainer.empty().append($buttonContainer, $accordion, $backToTop);
+      $tabContainer.empty().append($buttonContainer, $accordion);
       
       // Mark as converted
       convertedTabs.push(tabId);
@@ -416,21 +390,6 @@ function checkSize(){
       subtree: true
     });
   }
-  
-  // Support for SpringSpace events
-  if (typeof springSpace !== 'undefined') {
-    $(document).on('s-lib-widget-refresh-complete', function() {
-      handleResponsiveTabs();
-    });
-    
-    if (springSpace.event) {
-      springSpace.event.subscribe('content.loaded', function() {
-        handleResponsiveTabs();
-      });
-    }
-  }
-  
-})(jQuery);
 
 //ADD INDICATOR TO EXTERNAL LINKS
 function processLinks(context) {
@@ -495,3 +454,18 @@ $(function () {
     subtree: true
   });
 });
+  
+  // Support for SpringSpace events
+  if (typeof springSpace !== 'undefined') {
+    $(document).on('s-lib-widget-refresh-complete', function() {
+      handleResponsiveTabs();
+    });
+    
+    if (springSpace.event) {
+      springSpace.event.subscribe('content.loaded', function() {
+        handleResponsiveTabs();
+      });
+    }
+  }
+  
+})(jQuery);
