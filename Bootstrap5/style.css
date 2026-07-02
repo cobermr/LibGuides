@@ -267,7 +267,7 @@ th.hours-col-loc {
   color: #000 !important;
   border-bottom: 3px solid var(--red) !important;
   text-transform: uppercase !important;
-  padding-left: 0px !important;
+  padding-left: 0px !important; 
 }
 #guide-nav li {
   margin-bottom: 0 !important;
