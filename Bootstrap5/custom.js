@@ -389,7 +389,22 @@ function checkSize(){
       childList: true,
       subtree: true
     });
-  } */
+  } 
+    
+  // Support for SpringSpace events
+  if (typeof springSpace !== 'undefined') {
+    $(document).on('s-lib-widget-refresh-complete', function() {
+      handleResponsiveTabs();
+    });
+    
+    if (springSpace.event) {
+      springSpace.event.subscribe('content.loaded', function() {
+        handleResponsiveTabs();
+      });
+    }
+  }
+  
+})(jQuery); */
 
 //ADD INDICATOR TO EXTERNAL LINKS
 function processLinks(context) {
@@ -454,18 +469,3 @@ $(function () {
     subtree: true
   });
 });
-  
-  // Support for SpringSpace events
-  if (typeof springSpace !== 'undefined') {
-    $(document).on('s-lib-widget-refresh-complete', function() {
-      handleResponsiveTabs();
-    });
-    
-    if (springSpace.event) {
-      springSpace.event.subscribe('content.loaded', function() {
-        handleResponsiveTabs();
-      });
-    }
-  }
-  
-})(jQuery);
