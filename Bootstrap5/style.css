@@ -44,8 +44,11 @@
   background-color: #efefef !important; 
   color: #000 !important;
 }
-#sectionNavMenu .nav-item.active a {
+#sectionNavMenu .nav-item.active > a,
+#sectionNavMenu .nav-item .dropdown-item.active > a,
+#sectionNavMenu .nav-item a:hover {
   background-color: var(--red) !important;
+  color: #fff !important;
 }
 
 /* ------- General ------- */
@@ -255,11 +258,15 @@ th.hours-col-loc {
 #sectionNavHeading .accordion-button:not(.collapsed):after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
 }
-#sectionNavHeading .nav-item-first a, #sectionNavHeading .nav-item-first a:hover {
+#sectionNavHeading .nav-item-first a, 
+#sectionNavHeading .nav-item-first a:hover,
+#sectionNavHeading .nav-item-first a.active,
+#sectionNavHeading .nav-item-first a.active:hover
+ {
   background-color: #fff !important;
   color: #000 !important;
   border-bottom: 3px solid var(--red) !important;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
   padding-left: 0px !important;
 }
 #guide-nav li {
