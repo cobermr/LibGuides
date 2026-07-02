@@ -41,7 +41,7 @@
 
 /* ------- Delete After Customizing Styles ------- */
 #sectionNavMenu .nav-item a {
-  background-color: #efefef !important;
+  background-color: #efefef !important; 
   color: #000 !important;
 }
 #sectionNavMenu .nav-item.active a {
