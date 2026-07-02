@@ -60,7 +60,71 @@ function checkSize(){
   }
 }
 
-  // Hide elements with class 'admin-only'
+//ADD INDICATOR TO EXTERNAL LINKS
+function processLinks(context) {
+  // Normal links
+  $(context).find('a[target="_blank"]').each(function () {
+    const $link = $(this);
+
+    const hasImage = $link.find('img').length > 0;
+    const iconInside = $link.find('.fa-external-link').length > 0;
+    const iconAfter = $link.next().hasClass('fa-external-link');
+
+    // Remove icon if image link (inside only)
+    if (hasImage) {
+      $link.find('.fa-external-link').remove();
+    }
+
+    // Add sr-only text if missing
+    if (!$link.find('.sr-only').length) {
+      $link.append('<span class="sr-only visually-hidden">This link opens in a new window</span>');
+    }
+
+    // Add icon only for non-image links
+    if (!hasImage && !iconInside && !iconAfter) {
+      $link.append('<i class="fa fa-fw fa-external-link" style="padding-left:3px"></i>');
+    }
+  });
+
+  // Links inside .s-lg-book-props (append AFTER </a>)
+  $(context).find('div.s-lg-book-props a[target="_blank"]').each(function () {
+    const $link = $(this);
+
+    // Check if wrapper already exists immediately after
+    const nextWrapper = $link.next('.external-link-wrapper');
+
+    if (nextWrapper.length === 0) {
+      const appendHtml = `
+        <span class="external-link-wrapper">
+          <span class="sr-only visually-hidden">This link opens in a new window</span>
+          <i class="fa fa-fw fa-external-link" style="padding-left:3px"></i>
+        </span>
+      `;
+      $link.after(appendHtml);
+    }
+  });
+}
+
+$(function () {
+  processLinks(document);
+
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      mutation.addedNodes.forEach(function (node) {
+        if (node.nodeType === 1) {
+          processLinks(node);
+        }
+      });
+    });
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+});
+
+//HIDE ELEMENTS WITH CLASS 'ADMIN-ONLY'
 
   if (!window.location.href.includes("admin_c")) {
     const adminElements = document.querySelectorAll(".admin-only");
@@ -405,67 +469,3 @@ function checkSize(){
   }
   
 })(jQuery); */
-
-//ADD INDICATOR TO EXTERNAL LINKS
-function processLinks(context) {
-  // Normal links
-  $(context).find('a[target="_blank"]').each(function () {
-    const $link = $(this);
-
-    const hasImage = $link.find('img').length > 0;
-    const iconInside = $link.find('.fa-external-link').length > 0;
-    const iconAfter = $link.next().hasClass('fa-external-link');
-
-    // Remove icon if image link (inside only)
-    if (hasImage) {
-      $link.find('.fa-external-link').remove();
-    }
-
-    // Add sr-only text if missing
-    if (!$link.find('.sr-only').length) {
-      $link.append('<span class="sr-only visually-hidden">This link opens in a new window</span>');
-    }
-
-    // Add icon only for non-image links
-    if (!hasImage && !iconInside && !iconAfter) {
-      $link.append('<i class="fa fa-fw fa-external-link" style="padding-left:3px"></i>');
-    }
-  });
-
-  // Links inside .s-lg-book-props (append AFTER </a>)
-  $(context).find('div.s-lg-book-props a[target="_blank"]').each(function () {
-    const $link = $(this);
-
-    // Check if wrapper already exists immediately after
-    const nextWrapper = $link.next('.external-link-wrapper');
-
-    if (nextWrapper.length === 0) {
-      const appendHtml = `
-        <span class="external-link-wrapper">
-          <span class="sr-only visually-hidden">This link opens in a new window</span>
-          <i class="fa fa-fw fa-external-link" style="padding-left:3px"></i>
-        </span>
-      `;
-      $link.after(appendHtml);
-    }
-  });
-}
-
-$(function () {
-  processLinks(document);
-
-  const observer = new MutationObserver(function (mutations) {
-    mutations.forEach(function (mutation) {
-      mutation.addedNodes.forEach(function (node) {
-        if (node.nodeType === 1) {
-          processLinks(node);
-        }
-      });
-    });
-  });
-
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
-});
